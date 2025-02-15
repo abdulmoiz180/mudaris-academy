@@ -1,0 +1,499 @@
+.HeroPagecontainer {
+  background: linear-gradient(
+      180deg,
+      rgba(42, 25, 60, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    radial-gradient(circle at center, #2a193c 50%, #000000 90%);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.css-6fm6rz-MuiPaper-root-MuiCard-root {
+  box-shadow: none !important;
+}
+.card {
+  width: 253px;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: transparent !important;
+}
+/* language exception handling */
+.persianHeading {
+  font-size: 82px !important;
+  display: flex;
+  background: linear-gradient(180deg, #fff 54.17%, #b372cf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: -4.149px;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900 !important;
+  letter-spacing: -0.0506em;
+  text-align: center;
+}
+.persianDescription {
+  font-size: 27px !important;
+  width: 75% !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+  letter-spacing: -0.0001em !important;
+  text-align: center !important;
+}
+
+.cardText {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #000;
+  color: #9855ff;
+  border-radius: 50px;
+  padding: 0 !important;
+}
+.NewText {
+  font-size: 10px;
+  background-color: #9855ff;
+  color: black;
+  width: 34px;
+  height: 18px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContainerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.video-container {
+  background: transparent !important;
+}
+.mainHeading {
+  background: linear-gradient(180deg, #ffffff 54.17%, #b372cf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 82px;
+  font-weight: 500 !important;
+  line-height: 84px;
+  text-align: center;
+  width: 66%;
+}
+
+.mainDescription {
+  font-size: 22px !important;
+  color: white;
+  text-align: center;
+  width: 50%;
+  z-index: 2;
+}
+
+.ContainerText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.LandingPageVideo {
+  width: 95%;
+  height: 615px;
+  border: 2px solid black;
+  box-shadow: -1px -41px 55px 3px rgba(98, 42, 154, 0.69);
+  overflow: hidden;
+  background: transparent !important;
+}
+
+.BlurGlow {
+  width: 50%;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(50px);
+  margin-top: -200px;
+  pointer-events: none;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container::before {
+  content: '';
+  position: absolute;
+  width: 95%;
+  pointer-events: none;
+  height: 30%;
+  bottom: 0px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.8%, #050208 86.04%);
+}
+.hero-play-wrapper {
+  border-radius: 24px;
+  border: 1px solid hsl(0, 0%, 22%, 0.5);
+  background: rgba(140, 69, 255, 0.8);
+  position: absolute;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  gap: 10px;
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  box-shadow:
+    433px 559px 198px 0px rgba(11, 18, 50, 0),
+    277px 358px 181px 0px rgba(11, 18, 50, 0.01),
+    156px 201px 153px 0px rgba(11, 18, 50, 0.05),
+    69px 89px 113px 0px rgba(11, 18, 50, 0.09),
+    17px 22px 62px 0px rgba(11, 18, 50, 0.1);
+}
+
+.video-fade-out {
+  opacity: 0;
+}
+.video-fade-in {
+  opacity: 1;
+}
+.hero-play-wrapper img:hover {
+  cursor: pointer;
+}
+.hero-bg-lines {
+  position: relative;
+}
+.hero-bg-lines::after {
+  width: 565.299px;
+  height: 565.299px;
+  position: absolute;
+  content: '';
+  flex-shrink: 0;
+  border-radius: 565.299px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+  top: -45px;
+  left: -166px;
+}
+.hero-bg-lines::before {
+  width: 900px;
+  height: 772px;
+  flex-shrink: 0;
+  position: absolute;
+  content: '';
+  top: -140px;
+  left: -328px;
+  border-radius: 799.745px;
+  border: 1px dashed #fff;
+  opacity: 0.1;
+  pointer-events: none;
+}
+.ContainerText::before {
+  position: absolute;
+  content: '';
+  width: 1090px;
+  height: 900px;
+  flex-shrink: 0;
+  top: 50px;
+  border-radius: 1090px;
+  border: 1px solid #fff;
+  opacity: 0.1;
+}
+.mainHeading::before {
+  position: absolute;
+  content: '';
+  background-image: url(../../../../assets/icons/circle.svg);
+  width: 21.911px;
+  height: 21.911px;
+  top: 220px;
+  opacity: 0.6;
+  left: 190px;
+}
+.HeroComponentButtonDiv {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 58px;
+}
+
+.w-full {
+  width: 80%;
+}
+.w-half {
+  width: 66% !important;
+}
+
+@media only screen and (max-width: 1030px) {
+  .mainHeading {
+    width: 90%;
+    font-size: 32px !important;
+  }
+  .mainDescription {
+    font-size: 28px !important;
+    width: 80%;
+  }
+  button {
+    font-weight: 600;
+  }
+  .hero-bg-lines::before {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: -131px;
+    left: -196px;
+    border-radius: 50%;
+  }
+  .ContainerText::before {
+    width: 95%;
+    height: 650px;
+    top: 95px;
+    border-radius: 50%;
+  }
+  .hero-bg-lines::after {
+    top: -45px;
+    left: -170px;
+    border-radius: 50%;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .persianHeading {
+    font-size: 64px !important;
+  }
+  .persianDescription {
+    font-size: 32px !important;
+    width: 85% !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .persianHeading {
+    font-size: 40px !important;
+  }
+  .persianDescription {
+    font-size: 28px !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mainHeading {
+    width: 70% !important;
+    font-size: 32px !important;
+  }
+  .persianHeading {
+    font-size: 38px !important;
+    width: 75%;
+  }
+  .persianDescription {
+    width: 70% !important;
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 766px) {
+  .mainDescription {
+    font-size: 24px !important;
+    width: 90%;
+  }
+  .persianHeading {
+    width: calc(100% - 10%);
+    font-size: 32px !important;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .persianHeading {
+    width: calc(100% - 10%);
+    background-color: #fff !important;
+    font-size: 32px !important;
+  }
+  .persianDescription {
+    font-size: 16px !important;
+    width: 85% !important;
+  }
+  .HeroComponentButtonDiv {
+    width: 220px;
+  }
+  .hero-bg-lines::before {
+    display: none;
+  }
+  .ContainerText::before {
+    width: 95%;
+    height: 540px;
+  }
+  .hero-bg-lines::after {
+    top: -70px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .ContainerText::before {
+    display: none;
+  }
+  .hero-bg-lines::after {
+    top: -45px;
+    left: -170px;
+    width: 550px;
+    border-radius: 50%;
+    height: 375px;
+  }
+
+  .HeroComponentButtonDiv {
+    width: 165px;
+    height: 47px;
+    padding: 0px;
+  }
+  .LandingPageVideo {
+    width: 90%;
+    height: 315px;
+    border: 2px solid black;
+    box-shadow: -1px -41px 55px 3px rgba(98, 42, 154, 0.69);
+    overflow: hidden;
+    background: transparent !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .HeroPagecontainer {
+    justify-content: flex-start;
+  }
+  .ContainerText {
+    gap: 10px;
+  }
+  .ContainerContent {
+    gap: 10px;
+  }
+  .mainHeading {
+    font-size: 28px !important;
+    width: 70%;
+  }
+  .persianHeading {
+    font-size: 22px !important;
+    width: 100% !important;
+  }
+  .mainDescription,
+  .persianDescription {
+    font-size: 12px !important;
+    width: 80% !important;
+    line-height: normal !important;
+  }
+  .LandingPageVideo {
+    width: 100%;
+  }
+  .video-container::before {
+    width: 100%;
+    height: 200px;
+
+    .hero-play-wrapper {
+      left: 0;
+      transform: translate(140%, 50%);
+      bottom: 0;
+      padding: 20px;
+    }
+  }
+  .video-container {
+    position: relative;
+  }
+  .video-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.8%, #050208 86.04%);
+  }
+  .LandingPageVideo {
+    width: 100%;
+    height: 195px;
+  }
+  .hero-play-wrapper {
+    padding: 10px !important;
+    border-radius: 10px;
+  }
+
+  .video-fade-out {
+    opacity: 0;
+  }
+  .video-fade-in {
+    opacity: 1;
+  }
+  .hero-play-wrapper img:hover {
+    cursor: pointer;
+  }
+  .hero-play-wrapper img {
+    width: 20px;
+    height: 20px;
+  }
+  .hero-section-button {
+    padding: 5px 15px;
+    width: fit-content;
+    height: 45px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 10px;
+    z-index: 5;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+  .hero-bg-lines {
+    position: relative;
+    /* display: none; */
+  }
+  .hero-bg-lines::after {
+    width: 290px;
+    height: 230px;
+    position: absolute;
+    content: '';
+    flex-shrink: 0;
+    border-radius: 565.299px;
+    border: 1px solid #fff;
+    opacity: 0.2;
+    top: -30px;
+    left: -42px;
+  }
+  .HeroComponentButtonDiv {
+    width: 165px;
+    height: 47px;
+    padding: 0px;
+  }
+  .hero-bg-lines::before {
+    display: none;
+  }
+  .ContainerText::before {
+    position: absolute;
+    width: 100%;
+    height: 305px;
+    /* top: 0px; */
+    border-radius: 61%;
+  }
+  .mainHeading::before {
+    position: absolute;
+    content: '';
+    background-image: url(../../../../assets/icons/circle.svg);
+    width: 21.911px;
+    height: 21.911px;
+    top: 220px;
+    opacity: 0.6;
+    left: 190px;
+  }
+}
+@media screen and (width: 344px) {
+  .mainHeading {
+    font-size: 39px !important;
+    width: 100%;
+  }
+  .ContainerText::before {
+    width: 100%;
+    height: 300px;
+    top: 150px;
+  }
+  .hero-bg-lines::after {
+    width: 285px;
+    height: 250px;
+  }
+}

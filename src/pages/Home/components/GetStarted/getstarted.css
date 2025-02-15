@@ -1,0 +1,151 @@
+.get-start-container {
+  background: url('../../../../assets/images/boxpattern.png'),
+    radial-gradient(
+      circle farthest-corner at top center,
+      #000000 0%,
+      #622a9a 0%,
+      #000000 50%
+    ) !important;
+  background-size: cover; /* Ensure the pattern image covers the container */
+  background-blend-mode: color-dodge; /* Blend the image and gradient if needed */
+
+  height: auto; /* Allow it to adjust to content */
+  min-height: 55vh; /* Ensure a minimum height */
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  align-items: center;
+  margin: 70px auto !important;
+}
+.get-start-container h1 span {
+  color: #d4a1ff !important;
+}
+
+.get-start-heading {
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  background: linear-gradient(180deg, #fff 54.17%, #9855ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.get-email-field {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 53%;
+  align-items: center;
+}
+.css-10hy3qm-MuiFormControl-root-MuiTextField-root
+  .MuiOutlinedInput-root
+  .MuiInputBase-input {
+  color: #fff;
+  position: relative !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+.get-start-button {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  /* margin-left: -33%; */
+  width: 33%;
+  height: 47px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.0101em;
+}
+.my-with {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.css-10hy3qm-MuiFormControl-root-MuiTextField-root
+  .MuiOutlinedInput-root.Mui-focused
+  fieldset {
+  pointer-events: none !important;
+  position: absolute !important;
+  z-index: 0 !important;
+}
+.my-with {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: -27%;
+  width: 25%;
+  height: 47px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.0101em;
+}
+.MuiOutlinedInput-root .MuiInputBase-input {
+  color: #fff;
+  text-align: left;
+  direction: ltr !important;
+}
+.get-start-credit {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.0001em;
+}
+.m-right {
+  margin: 0 -33% 0 0;
+}
+@media only screen and (max-width: 600px) {
+  .get-start-heading {
+    width: 100%;
+    line-height: 125%;
+  }
+
+  .get-email-field {
+    width: 100%;
+  }
+  .get-start-button {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .get-start-heading {
+    width: 80%;
+  }
+
+  .get-email-field {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .get-start-heading {
+    width: 50%;
+  }
+  .get-email-field {
+    width: 38%;
+  }
+  .get-start-button {
+    width: 32%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .get-start-heading {
+    /* font-size: 56px; */
+    width: 75%;
+  }
+  .get-email-field {
+    width: 35%;
+  }
+
+  .get-start-button {
+    width: 32%;
+  }
+}

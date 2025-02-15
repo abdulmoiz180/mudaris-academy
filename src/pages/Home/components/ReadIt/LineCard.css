@@ -1,0 +1,473 @@
+.importanttoread {
+  color: white;
+  background: #000000;
+  background: radial-gradient(
+    40% 40% at 50% 60%,
+    rgba(152, 85, 255, 0) 0%,
+    rgba(152, 85, 255, 0.22) 50%,
+    #020103 100%
+  );
+}
+.LineCardContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.LineCardContainerMainTitleDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.LineCardContainerMainTitle {
+  letter-spacing: -0.84px !important;
+  font-size: 58px !important;
+  text-align: center;
+  font-weight: 900 !important;
+  background: linear-gradient(348.44deg, #9855ff 8.04%, #ffffff 68.68%);
+  margin-bottom: 140px !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.importanttoreadcardContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 150px;
+}
+.LineCardContainerMainDesc {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 31px !important;
+  letter-spacing: -0.002px !important;
+}
+.importanttoreadLinePic {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+}
+:root {
+  --LBG1: linear-gradient(107deg, #190d2e 0.54%, #020103 99.46%);
+}
+
+.importanttoreadCard {
+  border-radius: 24px;
+  background: var(
+    --LBG1,
+    linear-gradient(107deg, #190d2e 0.54%, #020103 99.46%)
+  ); /* Use the variable with fallback */
+  display: flex;
+  width: 530px;
+  padding: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Add transition */
+}
+
+.importanttoreadCard:hover {
+  transform: scale(1.003); /* Slightly enlarge the card on hover */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  background: linear-gradient(180deg, #010002 0%, #361764 100%),
+    url(../../../../assets/images/Pattern.png) !important;
+  background-size: cover !important;
+  background-blend-mode: screen;
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(7px) !important;
+}
+.uaatest {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  /* align-items: center; */
+}
+.uaatest:nth-child(even) {
+  justify-content: right;
+  flex-direction: row-reverse;
+  gap: 155px;
+}
+.uaatest:nth-child(2) {
+  gap: 190px;
+}
+
+.LineCardContainerMainPic {
+  position: absolute;
+  height: 83%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.importanttoreadCardPicDiv {
+  border-radius: 12px;
+  border: 1px solid var(--Grey-15, #262626);
+  background: linear-gradient(
+    131deg,
+    rgba(158, 255, 0, 0.2) -66.81%,
+    rgba(158, 255, 0, 0) 37.19%
+  );
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.importanttoreadCardtitle {
+  font-size: 32px !important;
+  font-weight: 500 !important;
+  background: linear-gradient(270deg, #00b3d7 0%, #be94ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.importanttoreadCarddescription {
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  line-height: 130% !important;
+}
+.importanttoreadCardContentText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 95%;
+}
+.importanttoreadCardnumberDiv {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #9855ff;
+  align-items: center;
+}
+.importanttoreadCardnumber {
+  font-size: 32px !important;
+  background: linear-gradient(270deg, #00b3d7 0%, #be94ff 100%);
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  transition:
+    font-size 0.3s ease,
+    background 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease; /* Added transform transition */
+}
+
+.importanttoreadCardnumber:hover {
+  font-size: 36px; /* Slight increase on hover */
+  background: linear-gradient(
+    270deg,
+    #be94ff 0%,
+    #00b3d7 100%
+  ); /* Reverse gradient on hover */
+  opacity: 0.9; /* Slight fade effect on hover */
+  transform: scale(1.1); /* Pop-up effect using scale */
+}
+
+/* extra work  */
+.importanttoreadCardnumberDiv {
+  position: absolute;
+  right: -20px;
+}
+.importanttoreadCardnumberDiv:nth-child(1) {
+  top: 0px;
+  right: -35px;
+}
+.importanttoreadCardnumberDiv:nth-child(2) {
+  top: 764px;
+  right: 10px;
+}
+.importanttoreadCardnumberDiv:nth-child(3) {
+  bottom: 730px;
+}
+
+/* .importanttoreadCardnumberDiv */
+@media screen and (max-width: 1180px) {
+  .uaatest {
+    width: 95%;
+  }
+  .importanttoreadCard {
+    width: 385.062px;
+    padding: 30px;
+    gap: 30px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(2) {
+    top: 600px;
+    right: 10px;
+  }
+  .importanttoreadCardtitle {
+    font-size: 24px !important;
+  }
+  .importanttoreadCarddescription {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  .importanttoreadcardContainer {
+    width: 100%;
+    gap: 0px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(3) {
+    bottom: 465px;
+    right: -30px;
+  }
+}
+@media screen and (max-width: 912px) {
+  .importanttoreadCard {
+    padding: 30px;
+    gap: 20px;
+    width: 350.062px;
+  }
+  .importanttoreadcardContainer {
+    width: 100%;
+    gap: 0px;
+  }
+  .importanttoreadCardtitle {
+    font-size: 22px !important;
+  }
+  .importanttoreadCarddescription {
+    font-size: 16px !important;
+  }
+  .importanttoreadCardnumberDiv:nth-child(2) {
+    top: 550px;
+    right: 10px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(3) {
+    bottom: 515px;
+  }
+  .LineCardContainerMainTitle {
+    font-size: 44px !important;
+    margin-bottom: 40px !important;
+  }
+}
+@media screen and (width: 820px) {
+  .importanttoreadcardContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 150px;
+  }
+  .importanttoreadCard {
+    gap: 10px;
+    width: 360px;
+  }
+
+  .LineCardContainerMainPic {
+    position: absolute;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .importanttoreadCardPicDiv {
+    padding: 15px;
+  }
+  .uaatest {
+    justify-content: fle !important;
+    width: calc(100% - 10px);
+  }
+  .importanttoreadCardPicDiv img {
+    width: 30px;
+  }
+  .LineCardContainerMain {
+    align-items: flex-start;
+  }
+  .importanttoreadLinePic {
+    position: absolute;
+    right: 330px;
+    z-index: 0;
+    height: 100%;
+  }
+  .importanttoreadCardnumberDivParent {
+    position: absolute;
+    right: 365px;
+    height: 100%;
+  }
+  .importanttoreadCardnumberDiv:nth-child(4) {
+    bottom: 0px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(1) {
+    top: 0px;
+    right: -20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .LineCardContainerMainTitleDesc {
+    margin-bottom: 10px;
+  }
+  .importanttoreadCardnumber {
+    font-size: 22px !important;
+  }
+  .importanttoreadCardnumberDiv {
+    height: 40px;
+    width: 40px;
+  }
+  .LineCardContainerMainDesc {
+    font-size: 18px !important;
+  }
+  .LineCardContainerMainTitle {
+    font-size: 20px !important;
+    line-height: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  .importanttoreadcardContainer {
+    gap: 20px;
+    width: calc(100% - 20px);
+  }
+  .importanttoreadCard {
+    padding: 25px 20px;
+    gap: 10px;
+    width: 280px;
+  }
+  .importanttoreadCarddescription {
+    font-size: 12px !important;
+    letter-spacing: 0.8px !important;
+    line-height: normal;
+  }
+  .importanttoreadCardtitle {
+    font-size: 18px !important;
+    line-height: 120% !important;
+  }
+  .importanttoreadCardPicDiv {
+    padding: 15px;
+  }
+  .uaatest {
+    width: calc(100% - 20px);
+  }
+
+  .importanttoreadLinePic {
+    left: -25px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(1) {
+    right: -30px;
+    top: -40px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(3) {
+    bottom: 375px;
+    right: -45px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(2) {
+    top: 440px;
+    right: -10px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(4) {
+    right: -40px;
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .importanttoreadLinePic {
+    left: -50px;
+    height: 100%;
+    margin-bottom: 35px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(1) {
+    right: -7px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(2) {
+    right: 25px;
+    top: 456px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(3) {
+    right: -30px;
+    bottom: 350px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(4) {
+    right: -10px;
+    bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .LineCardContainerMainTitleDesc {
+    margin-bottom: 10px;
+    gap: 4px;
+  }
+  .importanttoreadCardContentText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .LineCardContainerMainDesc {
+    font-size: 14px !important;
+  }
+  .LineCardContainerMainTitle {
+    font-size: 22px !important;
+    line-height: 50px !important;
+  }
+  .importanttoreadcardContainer {
+    gap: 20px;
+    width: 100%;
+    /* align-items: flex-end; */
+  }
+  .importanttoreadCard {
+    padding: 15px 15px 10px 10px;
+    gap: 10px;
+    width: 270px;
+  }
+  .importanttoreadCarddescription {
+    font-size: 12px !important;
+    letter-spacing: 0.8px !important;
+    line-height: normal;
+  }
+  .importanttoreadCardtitle {
+    font-size: 18px !important;
+    line-height: 125% !important;
+  }
+  .importanttoreadCardContentText {
+    gap: 5px;
+  }
+  .importanttoreadCardPicDiv {
+    padding: 15px;
+  }
+  .uaatest {
+    justify-content: center !important;
+    width: 75%;
+  }
+  .importanttoreadCardPicDiv img {
+    width: 30px;
+  }
+  .LineCardContainerMain {
+    align-items: flex-start;
+  }
+  .importanttoreadLinePic {
+    left: 30px;
+    height: 100%;
+    margin-bottom: 45px;
+  }
+  .LineCardContainerMainPic {
+    position: absolute;
+    right: 410px;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .importanttoreadCardnumberDiv:nth-child(1) {
+    right: -85px;
+    top: -50px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(3) {
+    bottom: 315px;
+    right: -95px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(2) {
+    top: 380px;
+    right: -60px;
+  }
+  .importanttoreadCardnumberDiv:nth-child(4) {
+    right: -90px;
+    bottom: 30px;
+  }
+}

@@ -1,0 +1,358 @@
+.slick-slider {
+  margin: 0;
+}
+.slick-dots {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+}
+.slick-dots li {
+  width: 25px;
+  height: 20px;
+  margin: 20px 5px;
+}
+.slick-dots li button:before {
+  width: 10px !important;
+  height: 6px !important;
+  color: #c8a6ff !important; /* Change the dot color to white */
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: white !important; /* Ensure active dot is also white */
+  width: 10px !important;
+  height: 6px !important;
+  color: #c8a6ff !important; /* Change the dot color to white */
+}
+
+.slick-list {
+  padding: 0 10px;
+}
+.slick-dots li button:before {
+  width: 10px !important; /* Set the new width */
+  height: 6px !important; /* Set the new height */
+  background-color: #90829d;
+  color: transparent !important; /* Keep the dot color */
+}
+.DigitalEducationComponent {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  background-color: #8c45ff;
+  color: transparent !important; /* Ensure active dot is white */
+  width: 25px !important; /* Set the new width for active dots */
+  height: 8px !important; /* Set the new height for active dots */
+}
+/* Slide container */
+.DigitalEducationSlide {
+  padding: 30px;
+  height: 360.621px;
+  border-radius: 12px;
+  text-align: center;
+}
+.DigitalEducationComponentTitleDesc {
+  color: #fff !important;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
+  width: 85%;
+  text-align: left;
+  margin: 30px auto !important;
+}
+.DigitalEducationComponentMainTitle {
+  width: 72%;
+  font-size: 60px !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.015em !important;
+  text-align: center;
+  background: linear-gradient(180deg, #fff 54.17%, #9855ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.DigitalEducationComponentTextComponent {
+  display: flex !important;
+  justify-content: center;
+}
+.DigitalEducationComponentButtonDiv {
+  display: flex;
+  justify-content: right;
+}
+.DigitalEducationSlide {
+  color: white;
+}
+.PicBgDigitalEducationSlide {
+  width: 200px !important;
+  height: 313px !important;
+}
+.DigitalEducationSlideNewandPicBox {
+  display: flex;
+  padding: 10px;
+}
+.DigitalEducationSlideNewChildBox {
+  border-radius: 16px;
+  background: #351763;
+  padding: 4px 12px !important;
+}
+.DigitalEducationSlideNew {
+  text-transform: capitalize;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+.DigitalEducationCardTitle {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5) !important;
+  font-size: 18px !important;
+  text-align: center;
+  padding: 0 5px;
+  font-weight: 800 !important;
+  z-index: 5;
+}
+
+.DigitalEducationSlideTitleandPicBox {
+  display: flex;
+  justify-content: flex-end;
+  height: 400px;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+}
+.DigitalEducationSlideTitleandPicBox::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(
+    to top,
+    rgba(5, 5, 5, 0.1),
+    rgba(133, 133, 133, 0)
+  );
+  z-index: 1; /* Ensure it's behind the text but above the image */
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+/* Ensure text is above the fade */
+.DigitalEducationSlideTitleandPicBox * {
+  position: relative;
+  z-index: 2;
+}
+.DigitalEducationSlideTitleandPicBoxwith-description {
+  width: 90% !important;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 130%;
+}
+.DigitalEducationSlideTitleandPicBoxwith-description::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.6s ease-in-out; /* Smooth transition */
+  background: linear-gradient(to top, rgba(0, 3, 0, 1), rgba(14, 14, 14, 0.1));
+  z-index: 1; /* Ensure it's behind the text but above the image */
+  pointer-events: none; /* So it doesn't block clicks */
+}
+.DigitalEducationSlideTitleandPicBoxwith-description:hover::before {
+  opacity: 1; /* Fully visible on hover */
+}
+
+.DigitalEducationCardDescription {
+  text-align: center !important;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+  height: 120px;
+  width: 100%;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(
+    10px
+  ); /* Optional: You can add a slight upward movement */
+
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.8s ease-in-out;
+}
+
+.hight-visible {
+  height: 16%;
+}
+.DigitalEducationCardDescription.visible {
+  opacity: 1;
+  transform: translateY(-10px);
+  margin: 10px 0;
+  width: 100%;
+}
+.wholePer {
+  width: 100%;
+  text-align: center;
+  gap: 0px !important;
+  justify-content: space-between;
+}
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TitleDescPer {
+  width: 100%;
+}
+@media screen and (max-width: 667px) {
+  .DigitalEducationComponentMainTitle {
+    font-size: 22px !important;
+    line-height: 150% !important;
+    letter-spacing: -0.72px !important;
+    width: 100%;
+  }
+  .DigitalEducationComponentButtonDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .DigitalEducationComponentDescription {
+    font-size: 14px !important;
+    line-height: 150% !important;
+  }
+  .PicBgDigitalEducationSlide {
+    width: 145px !important;
+    height: 205px !important;
+  }
+  .DigitalEducationComponentTextComponent {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .DigitalEducationComponentTitleDesc {
+    gap: 10px;
+    width: 100%;
+  }
+  .DigitalEducationComponentButtonDiv Button {
+    width: 90px;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+  .slick-slide {
+    padding: 0px 0px !important;
+  }
+  .DigitalEducationSlideTitleandPicBoxwith-description {
+    height: 70%;
+  }
+  .DigitalEducationSlide {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .DigitalEducationSlideTitleandPicBox {
+    height: 330px;
+  }
+  .PicBgDigitalEducationSlide {
+    width: 154px !important;
+    height: 240px !important;
+  }
+  .DigitalEducationCardTitle {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+  }
+  .DigitalEducationCardDescription {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+  }
+  .hight-visible {
+    height: 20%;
+  }
+  .DigitalEducationSlideTitleandPicBoxwith-description {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 667px) and (max-width: 768px) {
+  .PicBgDigitalEducationSlide {
+    width: 160px !important;
+    height: 260px !important;
+  }
+  .DigitalEducationSlideTitleandPicBox {
+    height: 350px;
+  }
+  .DigitalEducationCardTitle {
+    font-size: 16px !important;
+  }
+  .hight-visible {
+    height: 19%;
+  }
+  .DigitalEducationCardDescription {
+    font-size: 12px !important;
+    height: 120px;
+  }
+  .DigitalEducationCardDescription.visible {
+    margin: 10px 0;
+  }
+  .DigitalEducationComponentMainTitle {
+    width: calc(100% - 50px);
+    font-size: 32px !important;
+  }
+  .DigitalEducationSlideTitleandPicBoxwith-description {
+    height: 130%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .DigitalEducationComponentMainTitle {
+    width: calc(100% - 50px);
+    font-size: 32px !important;
+  }
+
+  .DigitalEducationCardTitle {
+    font-size: 14px !important;
+    padding: 0 10px;
+  }
+
+  .hight-visible {
+    height: 15%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1050px) {
+  .DigitalEducationComponentMainTitle {
+    width: calc(100% - 50px);
+    font-size: 32px !important;
+  }
+
+  .DigitalEducationCardTitle {
+    font-size: 16px !important;
+    padding: 0 10px;
+  }
+
+  .hight-visible {
+    height: 15%;
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+  .DigitalEducationComponentMainTitle {
+    width: calc(100% - 50px);
+    font-size: 44px !important;
+  }
+
+  .DigitalEducationCardTitle {
+    font-size: 18px !important;
+    padding: 0 10px;
+  }
+
+  .hight-visible {
+    height: 20%;
+  }
+}
+@media screen and (min-width: 1400px) {
+}

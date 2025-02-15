@@ -1,0 +1,254 @@
+.GetToknowMainSection {
+  background: linear-gradient(180deg, #020103 0%, #151516 100%);
+}
+.GetToknowMainContainer {
+  width: 85% !important;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-bottom: 40px;
+}
+.onlyDRPICUSEDFORMOBILE {
+  display: none;
+}
+.GetToknowContent {
+  display: flex !important;
+  flex-direction: row-reverse;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 80px !important;
+  width: 100% !important;
+}
+.GetToknowTextContent {
+  text-align: right;
+  align-items: flex-start;
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 70px !important;
+  color: #fff;
+  width: 100% !important;
+}
+.titleGETtoKnow {
+  background: linear-gradient(180deg, #fff 54.17%, #b372cf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.GetToknowTextContent h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 65px;
+  letter-spacing: -0.015em;
+  text-align: right;
+}
+.GetToknowTextContent p {
+  color: #e1e1e1;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.paraDivGettoKnow {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.paraDivGettoKnow p {
+  width: 91%;
+}
+.GetToknowContentbelowContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.GetToknowTextContentbelow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 24px;
+  background: #020103;
+  width: 90%;
+  padding: 56px 0;
+}
+.GetToknowTextContentbelowMainText {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+}
+.mobile-slider {
+  height: 200px;
+  width: 100%;
+}
+.GetToknowTextContentbelowMainText h4 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45.5px;
+  letter-spacing: -0.015em;
+  text-align: center;
+}
+.GetToknowTextContentbelowMainText p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: center;
+}
+.GetToknowTextContentbelowMainText h5 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 28.6px;
+  text-align: center;
+}
+.GetToknowContentbelowLogoBox {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  flex-wrap: nowrap; /* Prevent wrapping, logos stay in a single row */
+  gap: 30px; /* Reduced gap between logos */
+  align-items: center;
+  margin-bottom: 100px;
+  overflow-x: auto; /* Allows horizontal scrolling if necessary */
+}
+
+.GetToknowContentbelowLogo {
+  display: flex;
+  width: 110px; /* Reduced logo size */
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16.512px;
+  background: #020103;
+  padding: 70px;
+}
+
+@media screen and (max-width: 1280px) {
+  .GetToknowContent {
+    gap: 50px !important;
+  }
+  .GetToknowMainContainer {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .GetToknowContent img {
+    width: 50%;
+  }
+  .GetToknowTextContent h2 {
+    font-size: 44px !important;
+  }
+  .GetToknowTextContent p {
+    font-size: 18px !important;
+  }
+  .GetToknowContent {
+    gap: 40px !important;
+  }
+  .GetToknowMainContainer {
+    width: 95% !important;
+  }
+  .GetToknowTextContentbelowMainText p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 932px) {
+  .GetToknowTextContent h2 {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+  .GetToknowTextContent p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 830px) {
+  .GetToknowContent img {
+    width: 80%;
+  }
+  .GetToknowContent {
+    flex-direction: column;
+  }
+  .GetToknowTextContent {
+    width: 80% !important;
+  }
+  .GetToknowTextContent p {
+    font-size: 22px;
+  }
+  .GetToknowContentbelowLogoBox {
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .GetToknowContentbelowLogoBox {
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .GetToknowContentbelowLogo {
+    width: 100px; /* Further reduced size for smaller screens */
+    height: 100px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .GetToknowMainContainer {
+    width: 90% !important;
+  }
+  .onlyDRPICUSEDFORMOBILE {
+    display: block;
+    text-align: center;
+    font-weight: 900 !important;
+    font-size: 38px;
+    width: 100%;
+    margin: auto;
+  }
+  .onlyDRPICUSEDFORLAPTOP {
+    display: none;
+  }
+  .GetToknowContentbelowLogo {
+    display: flex !important;
+  }
+  .GetToknowContent {
+    flex-direction: column !important;
+  }
+  .GetToknowContent img {
+    width: 85%;
+  }
+  .GetToknowTextContent {
+    gap: 20px !important;
+    width: 100% !important;
+  }
+  .GetToknowTextContent h2 {
+    font-size: 44px;
+    line-height: 45px;
+  }
+  .GetToknowTextContent p {
+    font-size: 18px;
+  }
+  .paraDivGettoKnow p {
+    width: 100%;
+  }
+  .GetToknowTextContentbelowMainText h4 {
+    font-weight: 800;
+    line-height: 130%;
+  }
+  .GetToknowTextContentbelow {
+    width: 100%;
+  }
+  .GetToknowTextContentbelow {
+    width: 90%;
+    padding: 25px 0;
+  }
+  .GetToknowTextContentbelowMainText p {
+    line-height: 140%;
+  }
+  .GetToknowTextContentbelowMainText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

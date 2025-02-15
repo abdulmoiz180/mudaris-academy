@@ -1,0 +1,63 @@
+.home-page {
+  gap: 150px;
+  overflow: hidden;
+}
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+.customCursor {
+  height: 20px;
+  width: 20px;
+  background: radial-gradient(
+    circle,
+    #c020ff 20%,
+    /* Brighter neon purple */ rgba(155, 0, 255, 0.6) 50%,
+    /* Stronger inner glow */ rgba(200, 100, 255, 0.3) 100%
+      /* Smooth outer blend */
+  );
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+  filter: blur(20px); /* Increased blur for a stronger glow */
+  transition: all linear 0.1s;
+  box-shadow:
+    0 0 120px rgba(155, 0, 255, 0.9),
+    /* Stronger purple glow */ 0 0 60px rgba(200, 100, 255, 0.8),
+    /* Soft outer glow */ 0 0 40px rgba(255, 255, 255, 0.5); /* White highlight for brightness */
+  mix-blend-mode: difference; /* Enhances contrast with backgrounds */
+  pointer-events: none; /* Ensures it doesn't interfere with clicks */
+}
+/* RTL for Persian (Farsi) */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track (the area behind the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a142ff, #d08bff);
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #7e2ce8, #c174ff);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page {
+    gap: 80px;
+  }
+  
+}

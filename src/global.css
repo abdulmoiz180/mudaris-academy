@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Zain&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Zain', sans-serif;
+}
+
+:root {
+  --primary-clr: #020103;
+  --secondary-clr: #4d3763;
+  --footer-bg: #060e1e; /* variable name could be changed in future...    */
+  --secondary-font-clr: rgba(255, 255, 255, 0.62);
+  --white-normal: #f3f3f3;
+  --purple: #9855ff;
+  --gray: #e6e6e6;
+}
+.dark-gray {
+  color: #aaaaaa !important;
+}
+body {
+  background: var(--primary-clr) !important;
+}
+.rubik {
+  font-family: 'Rubik', sans-serif !important;
+}
+.line-through {
+  text-decoration: line-through !important;
+}
+.gray {
+  color: var(--gray) !important;
+}
+.purple {
+  color: var(--purple) !important;
+}
+.white-normal {
+  color: var(--white-normal) !important;
+}
+.row {
+  display: flex;
+}
+.monts {
+  font-family: 'Montserrat', sans-serif !important;
+}
+.inter {
+  font-family: 'Inter', sans-serif !important;
+}
+.zain {
+  font-family: 'Zain', sans-serif !important;
+}
+html[lang='fa'] .inter {
+  font-family: 'Rubik', sans-serif !important;
+}
+.dm-sans {
+  font-family: 'DM Sans', sans-serif !important;
+}
+.manrope {
+  font-family: 'Manrope', sans-serif !important;
+}
+.alignItems-left {
+  align-items: flex-end !important;
+}
+.alignItems-right {
+  align-items: flex-start !important;
+}
+.public-sans {
+  font-family: 'Public Sans', sans-serif !important;
+}
+
+.barlow {
+  font-family: 'Barlow', sans-serif;
+}
+.footer-bg {
+  background-color: var(--footer-bg);
+}
+.primary-bg {
+  background-color: var(--primary-clr);
+}
+.flex-center {
+  align-items: center !important;
+}
+.secondary-font-clr {
+  color: var(--secondary-font-clr) !important;
+}
+.transparent {
+  background-color: transparent !important;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.flex {
+  display: flex;
+}
+.gap-5 {
+  gap: 5px;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.testing {
+  border: 1px solid black;
+}
+.clr-white {
+  color: #fff !important;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.rev-flex {
+  flex-direction: row-reverse;
+}
+li {
+  list-style: none;
+}
+.center {
+  text-align: center;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.width-90 {
+  width: 85%; /* kindly check this block in resonsiveness and code accordingly */
+  margin: auto;
+}
+.fs-48 {
+  font-size: 48px !important;
+}
+.description {
+  font-size: 20px !important;
+}
+.lightgray {
+  color: #ffffffb2;
+}
+
+.input-text {
+  color: #ffffff80;
+}
+.button-text {
+  color: #000000;
+}
+.input-border {
+  color: #ffffff26;
+}
+.align-right {
+  text-align: right !important;
+}
+.align-left {
+  text-align: left !important;
+}
+
+/* responsive code */
+
+@media only screen and (max-width: 1030px) {
+  .mobdescription {
+    font-size: 20px !important;
+  }
+  .mobsecondheading {
+    font-size: 28px !important;
+  }
+  .mobHeading {
+    font-size: 36px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .width-90 {
+    width: 90%; /* kindly check this block in resonsiveness and code accordingly */
+  }
+  .mobdescription {
+    font-size: 18px !important;
+  }
+  .mobsecondheading {
+    font-size: 26px !important;
+  }
+  .mobHeading {
+    font-size: 32px !important;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .width-90 {
+    width: 100%; /* kindly check this block in resonsiveness and code accordingly */
+  }
+  .mobHeading {
+    font-size: 24px !important;
+  }
+  .mobsecondheading {
+    font-size: 18px !important;
+  }
+  .mobdescription {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .title {
+    font-size: 44px;
+  }
+  .h2 {
+    font-size: 44px !important;
+  }
+  .description {
+    font-size: 16px;
+  }
+  /* .row {
+    flex-direction: column;
+  } */
+  .width-90 {
+    width: 100% !important;
+  }
+  /* only available on mobile */
+  .mobHeading {
+    font-size: 22px !important;
+  }
+  .mobsecondheading {
+    font-size: 16px !important;
+  }
+  .mobdescription {
+    font-size: 12px !important;
+  }
+}

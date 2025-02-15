@@ -1,0 +1,74 @@
+/* .GetStartedButton {
+  font-weight: 800 !important;
+  font-size: 16px !important;
+  color: rgb(255, 255, 255) !important;
+  width: fit-content !important;
+  padding: 6px 15px !important;
+  gap: 10px !important;
+  height: 38px !important;
+  background: rgba(61, 61, 61, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: inset 0px 0px 6px 3px rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(7px) !important;
+  border-radius: 10px !important;
+  text-transform: capitalize !important;
+  transition: linear 0.3s !important;
+}
+.GetStartedButton:hover {
+  border-radius: 10px;
+  border: 1px rgba(255, 255, 255, 0.15) !important;
+  background: rgba(140, 69, 255, 0.4) !important;
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(7px) !important;
+}
+.GetStartedButtonDiv {
+  display: flex;
+  justify-content: center;
+  width: fit-content !important;
+  min-width: 280px !important;
+}
+} */
+.GetStartedButton {
+  background: linear-gradient(135deg, #4f00c4, #c015ff);
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease-in-out !important;
+  text-transform: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5) !important;
+}
+
+.GetStartedButton:hover {
+  background: linear-gradient(135deg, #ff00ff, #5700b5);
+  box-shadow: 0px 0px 25px rgba(255, 0, 255, 0.9);
+}
+/* Do not touch it, this is for community component */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .GetStartedButton {
+    font-size: 12px !important;
+  }
+  .GetStartedButtonDiv {
+    min-width: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .GetStartedButton {
+    font-size: 16px !important;
+  }
+  .GetStartedButtonDiv {
+    min-width: 0 !important;
+  }
+}
+@media screen and (max-width: 670px) {
+  .GetStartedButton {
+    border-radius: 10px !important;
+    height: 30px !important;
+    padding: 10px 12px !important;
+    font-size: 10px !important;
+  }
+}
