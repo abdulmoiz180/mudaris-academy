@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import E_Learn from './components/E_Learn/index.jsx';
-import Hero from './components/Hero/Index.jsx';
+import Hero from './components/Hero/index.jsx';
 import FAQ from './components/Accordion/index.jsx';
 import GetStart from './components/GetStarted/index.jsx';
 import PriceCards from './components/PriceCards/index.jsx';
-import GettoKnow from './components/GettoKnow/Index.jsx';
+import GettoKnow from './components/GettoKnow/index.jsx';
 import DigitalEducation from './components/DigitalEducationSlider/index.jsx';
 import Community from './components/Community/index.jsx';
 import WhatYouGet from './components/WhatYouGet/index.jsx';
