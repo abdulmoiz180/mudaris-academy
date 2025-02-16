@@ -407,14 +407,16 @@
     line-height: 50px !important;
   }
   .importanttoreadcardContainer {
-    gap: 20px;
+    gap: 75px;
     width: 100%;
-    /* align-items: flex-end; */
-  }
+    align-items: center;
+}
   .importanttoreadCard {
     padding: 15px 15px 10px 10px;
     gap: 10px;
     width: 270px;
+    position: relative;
+    z-index: 3;
   }
   .importanttoreadCarddescription {
     font-size: 12px !important;
@@ -448,26 +450,25 @@
   }
   .LineCardContainerMainPic {
     position: absolute;
-    right: 410px;
-    height: 83%;
+    right: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
   .importanttoreadCardnumberDiv:nth-child(1) {
-    right: -85px;
-    top: -50px;
+    right: -18px;
+    top: -165px;
   }
   .importanttoreadCardnumberDiv:nth-child(3) {
-    bottom: 315px;
-    right: -95px;
+    bottom: 515px;
+    right: -20px;
   }
   .importanttoreadCardnumberDiv:nth-child(2) {
-    top: 380px;
-    right: -60px;
+    top: 295px;
+    right: -20px;
   }
   .importanttoreadCardnumberDiv:nth-child(4) {
-    right: -90px;
-    bottom: 30px;
+    right: -20px;
+    bottom: 150px;
   }
 }
