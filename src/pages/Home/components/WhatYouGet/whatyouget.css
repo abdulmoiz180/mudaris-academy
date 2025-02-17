@@ -114,8 +114,8 @@
   height: normal !important;
 }
 .whatyouget-card-imagecontainer iframe {
-  width: auto !important; 
-   height: auto !important;
+  width: auto !important;
+  height: auto !important;
   object-fit: cover;
 }
 .purple-box-text {
@@ -163,12 +163,12 @@
     text-align: justify;
   }
   .whatyouget-card {
-    width: 90% !important;
+    width: calc(100% - 20px) !important;
     margin: auto !important;
     flex-direction: column-reverse !important;
     align-items: center !important;
     justify-content: space-around !important;
-    height: 575px !important;
+    height: 100% !important;
   }
   .whatyouget-card-text {
     width: 95% !important;
@@ -179,6 +179,9 @@
   }
   .whatyouget-card-text p {
     line-height: 120%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
   }
   .whatyouget-container {
     gap: 50px;
@@ -250,7 +253,7 @@
     width: 100%;
   }
   .whatyouget-card-text p {
-    width: 95% !important; 
+    width: 95% !important;
   }
   .wyg-head1 {
     width: 50%;

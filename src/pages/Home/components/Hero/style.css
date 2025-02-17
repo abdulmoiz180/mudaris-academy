@@ -37,9 +37,9 @@
   text-align: center;
 }
 .persianDescription {
-  font-size: 27px !important;
+  font-size: 28px !important;
   width: 75% !important;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
   line-height: 30px !important;
   letter-spacing: -0.0001em !important;
   text-align: center !important;
@@ -87,14 +87,6 @@
   line-height: 84px;
   text-align: center;
   width: 66%;
-}
-
-.mainDescription {
-  font-size: 22px !important;
-  color: white;
-  text-align: center;
-  width: 50%;
-  z-index: 2;
 }
 
 .ContainerText {
@@ -333,8 +325,6 @@
   .hero-bg-lines::after {
     top: -70px;
   }
-}
-@media only screen and (max-width: 670px) {
   .ContainerText::before {
     display: none;
   }
@@ -375,13 +365,13 @@
     width: 70%;
   }
   .persianHeading {
-    font-size: 22px !important;
+    font-size: 32px !important;
     width: 100% !important;
   }
   .mainDescription,
   .persianDescription {
-    font-size: 12px !important;
-    width: 80% !important;
+    font-size: 16px !important;
+    width: 100% !important;
     line-height: normal !important;
   }
   .LandingPageVideo {

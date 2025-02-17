@@ -128,8 +128,8 @@
     display: flex !important;
   }
   .community-description {
-    font-size: 12px !important;
-    width: 80%;
+    font-size: 18px !important;
+    width: 100%;
     margin: auto;
     text-align: center !important;
     line-height: normal !important;
@@ -158,7 +158,7 @@
     height: 30px;
   }
   .commmunity-smallHeading {
-    font-size: 20px !important;
+    font-size: 28px !important;
     font-weight: 900 !important;
     letter-spacing: -0.0001em !important;
   }
