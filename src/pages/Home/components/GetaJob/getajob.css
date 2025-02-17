@@ -457,9 +457,12 @@
 @media only screen and (min-width: 1400px) {
   .logodiv {
     height: 550px;
-    width: 550px;
-    left: 31%;
+    width: 450px;
+    left: 33%;
   }
+  .getajob-paragraphs {
+    gap: 100px;
+}
 }
 @keyframes upDownAnimation {
   0% {

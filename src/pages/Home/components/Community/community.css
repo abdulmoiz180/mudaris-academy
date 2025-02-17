@@ -223,7 +223,7 @@
     margin: auto !important;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1290px) {
   .community-header {
     width: 85%;
   }
@@ -234,12 +234,18 @@
     width: 85% !important;
   }
 }
-@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+@media only screen and (min-width: 1400px) and (max-width: 1430px) {
   .community-header {
-    width: 60%;
+    width: 85%;
     align-items: flex-start;
   }
   .community-section {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 1430px) and (max-width: 1530px) {
+  .community-header {
+    gap: 10px;
+    width: 25%;
   }
 }

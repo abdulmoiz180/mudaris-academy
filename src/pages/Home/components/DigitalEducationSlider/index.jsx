@@ -32,14 +32,14 @@ export default function DigitalEducation() {
   const [isPaused, setIsPaused] = useState(false);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     arrows: false,
     speed: 3000,
     slidesToShow: 6.7,
     slidesToScroll: 1,
-    autoplay: !isPaused, // Autoplay is paused when mouse is hovered
-    autoplaySpeed: 1,
+    autoplay: true, // Autoplay is paused when mouse is hovered
+    autoplaySpeed: 7000,
     cssEase: 'linear',
     pauseOnHover: true, // We handle pausing manually
     responsive: [
