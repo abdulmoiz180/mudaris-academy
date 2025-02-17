@@ -56,7 +56,7 @@ const Community = () => {
     pauseOnHover: true,
     pauseOnFocus: true,
     draggable: true,
-    slidesToShow: 2, // Default for mobile
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {
