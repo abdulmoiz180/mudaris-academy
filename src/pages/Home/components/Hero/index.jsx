@@ -5,30 +5,33 @@ import BlurGlow from '@assets/images/blur2.svg';
 import { useTranslation } from 'react-i18next';
 import { GetStartedButton } from '../GetStartedButton/index.jsx';
 import { priceCardsRef } from '../../index';
+import Play from '@assets/icons/play.svg';
+
 const Hero = () => {
   const { t, i18n } = useTranslation('home');
+  const language = i18n.language;
+  const videoRef = useRef(null);
+
+  const [showPlayButton, setShowPlayButton] = useState(true);
+
   const scrollToPriceCards = () => {
     if (priceCardsRef.current) {
       priceCardsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  const [video, setVideo] = useState(false);
-  const videoRef = useRef(null);
-  const language = i18n.language;
-  const videoPlay = () => {
-    setVideo((prevState) => {
-      const newVideoState = !prevState;
-      if (newVideoState) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-      return newVideoState;
+
+  const handleVideo = () => {
+    console.log('assaalamaualikum');
+    setShowPlayButton((prevState) => {
+      !prevState;
+      console.log(prevState);
     });
   };
+
   return (
     <Container className="HeroPagecontainer">
       <Box className="ContainerContent">
+        {/* Text Section */}
         <Box className="ContainerText">
           <Typography
             variant="h1"
@@ -59,8 +62,13 @@ const Hero = () => {
           </span>
         </Box>
 
-        {/* Video Container */}
-        <div className="video-container">
+        {/* Video Section */}
+        <div className="video-container" onClick={()=>{console.log('object');}}>
+          {/* {showPlayButton && (
+            <span className="hero-play-wrapper video-fade-in">
+              <img src={Play} alt="Play Video" />
+            </span>
+          )} */}
           <iframe
             className="LandingPageVideo"
             src="https://customer-a4r494riw1l661m0.cloudflarestream.com/94141ba624760c0e2421e603de1caa12/iframe?poster=https%3A%2F%2Fcustomer-a4r494riw1l661m0.cloudflarestream.com%2F94141ba624760c0e2421e603de1caa12%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"

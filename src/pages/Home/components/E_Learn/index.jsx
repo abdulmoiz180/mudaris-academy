@@ -19,7 +19,7 @@ const E_Learn = () => {
 
   // Slider settings for mobile
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     arrows: false,
     speed: 2000,
@@ -28,7 +28,7 @@ const E_Learn = () => {
     autoplay: true,
     autoplaySpeed: 2000, // Corrected autoplay speed
     cssEase: 'linear',
-    pauseOnHover: false,
+    pauseOnHover: true,
   };
 
   const imgs = [Home, CaseStudy, Discussion, Schedule, Certificate, Upload];

@@ -150,6 +150,7 @@
   align-items: center;
   gap: 10px;
   z-index: 3;
+  pointer-events: none;
   opacity: 1;
   transition: opacity 1s ease-in-out;
   box-shadow:
@@ -159,7 +160,10 @@
     69px 89px 113px 0px rgba(11, 18, 50, 0.09),
     17px 22px 62px 0px rgba(11, 18, 50, 0.1);
 }
-
+.video-container iframe{
+  position: relative;
+  z-index: 2;
+}
 .video-fade-out {
   opacity: 0;
 }

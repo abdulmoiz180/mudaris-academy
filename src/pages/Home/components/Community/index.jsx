@@ -47,7 +47,7 @@ const Community = () => {
   ];
 
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     arrows: false,
     speed: 500,
@@ -61,7 +61,7 @@ const Community = () => {
     responsive: [
       {
         breakpoint: 600, // Small screens
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        settings: { slidesToShow: 1.3, slidesToScroll: 1 },
       },
       {
         breakpoint: 768, // Tablets

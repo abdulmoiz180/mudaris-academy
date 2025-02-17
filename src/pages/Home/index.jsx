@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import E_Learn from './components/E_Learn/index.jsx';
 import Hero from './components/Hero/index.jsx';
 import FAQ from './components/Accordion/index.jsx';
@@ -76,12 +76,11 @@ const Home = () => {
       onMouseMove={handleMouseMove}
     >
       {isCursorVisible && <div className="customCursor" ref={cursorRef}></div>}
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
+       <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
         <Hero />
-        {/* done svg */}
       </motion.div>
 
-      <motion.div
+       <motion.div
         initial="hidden"
         animate="visible"
         id="community"
@@ -97,7 +96,7 @@ const Home = () => {
         viewport={{ once: true }}
       >
         <GetaJob />
-      </motion.div>
+      </motion.div> 
 
       <motion.div
         initial="hidden"
@@ -108,7 +107,7 @@ const Home = () => {
       >
         <DigitalEducation />
       </motion.div>
-      <motion.div
+       <motion.div
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}
@@ -154,7 +153,7 @@ const Home = () => {
         viewport={{ once: true }}
       >
         <GettoKnow />
-      </motion.div>
+      </motion.div> 
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -181,7 +180,7 @@ const Home = () => {
         viewport={{ once: true }}
       >
         <GetStart />
-      </motion.div>
+      </motion.div>  
     </section>
   );
 };
