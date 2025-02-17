@@ -41,8 +41,10 @@ export default function DigitalEducation() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 7000,
+    pauseOnFocus:true,
+    pauseOnDotsHover:true,
     cssEase: 'linear',
-    pauseOnHover: false, // Disable default pause to handle manually
+    pauseOnHover: true, // Disable default pause to handle manually
     rtl: true, // Corrected: Moves from right to left
     responsive: [
       { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
@@ -59,8 +61,6 @@ export default function DigitalEducation() {
       <Slider
         ref={sliderRef}
         {...settings}
-        onMouseEnter={() => sliderRef.current?.slickPause()} // Immediate pause
-        onMouseLeave={() => sliderRef.current?.slickPlay()} // Resume autoplay
       >
         {educationImages.map((img, index) => {
           const title = t(`digitaleducationcards.${index}.title`, { defaultValue: '' });
