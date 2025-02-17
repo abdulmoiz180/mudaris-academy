@@ -18,7 +18,7 @@ import { priceCardsRef } from '../../index';
 const Community = () => {
   const { t, i18n } = useTranslation('home');
   const [isMobile, setIsMobile] = useState(window.innerWidth < 790);
-
+  console.log(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 790); // Adjusted breakpoint to 786px

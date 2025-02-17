@@ -35,7 +35,7 @@ export default function DigitalEducation() {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 3000,
+    speed: 10000,
     slidesToShow: 6.7,
     slidesToScroll: 1,
     autoplay: !isPaused, // Autoplay is paused when mouse is hovered
@@ -45,8 +45,9 @@ export default function DigitalEducation() {
     responsive: [
       {
         breakpoint: 1544,
-        settings: { slidesToShow: 5, slidesToScroll: 3, dots: true },
+        settings: { slidesToShow: 5.7, slidesToScroll: 3, dots: true },
       },
+
       {
         breakpoint: 1044,
         settings: { slidesToShow: 4.2, slidesToScroll: 3, dots: true },

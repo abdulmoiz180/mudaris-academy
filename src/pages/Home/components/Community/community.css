@@ -30,7 +30,7 @@
 }
 .community-description {
   font-size: 20px !important;
-  width: 140%;
+  width: 100%;
   position: relative;
 }
 .community-section {
@@ -236,10 +236,13 @@
 }
 @media only screen and (min-width: 1400px) and (max-width: 1500px) {
   .community-header {
-    width: 60%;
+    width: 85%;
     align-items: flex-start;
   }
   .community-section {
-    width: 100%;
+    width: 85%;
+  }
+  .community-description {
+    width: 100% !important;
   }
 }
