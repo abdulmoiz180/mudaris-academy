@@ -10,7 +10,7 @@ i18n
   .use(LanguageDetector) // Detect user language
   .use(initReactI18next) // Bind i18n to React
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'fa',
     lng: 'fa', // Default to farsi
     debug: import.meta.env.DEV, // Debug only in dev mode
     interpolation: {

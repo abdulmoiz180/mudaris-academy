@@ -13,7 +13,9 @@ const root = createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <I18nextProvider i18n={i18n}> {/* Ensure i18n wrapper is included */}
+    <I18nextProvider i18n={i18n}>
+      {' '}
+      {/* Ensure i18n wrapper is included */}
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <App />

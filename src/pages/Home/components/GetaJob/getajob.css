@@ -209,7 +209,7 @@
   .getajobParaforbg {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 24px;
@@ -241,7 +241,7 @@
     width: 98%;
   }
   .getajob-paragraphs p {
-    font-size: 12px;
+    font-size: 18px;
     width: 100%;
   }
   .arrow-container {
