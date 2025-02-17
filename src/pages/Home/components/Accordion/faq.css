@@ -111,15 +111,16 @@
     gap: 0;
   }
   .faq-title {
-    font-size: 34px !important;
+    font-size: 38px !important;
   }
   .faq-subtitle {
-    font-size: 16px !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
     text-align: center;
   }
   .faq-question {
     font-size: 14px !important;
-    font-weight: 900 !important;
+    font-weight: 700 !important;
   }
   .faq-answer {
     width: 100%;

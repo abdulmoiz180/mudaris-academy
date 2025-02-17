@@ -46,7 +46,7 @@
 .GetToknowTextContent p {
   color: #e1e1e1;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 130%;
 }
 .paraDivGettoKnow {
@@ -160,7 +160,7 @@
     line-height: 50px;
   }
   .GetToknowTextContent p {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
 }
 @media screen and (max-width: 830px) {
@@ -238,11 +238,9 @@
   }
   .GetToknowTextContentbelow {
     width: 100%;
+    padding: 25px 10px;
   }
-  .GetToknowTextContentbelow {
-    width: 90%;
-    padding: 25px 0;
-  }
+
   .GetToknowTextContentbelowMainText p {
     line-height: 140%;
   }
