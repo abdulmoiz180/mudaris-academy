@@ -45,12 +45,12 @@ export default function DigitalEducation() {
     pauseOnHover: false, // Disable default pause to handle manually
     rtl: true, // Corrected: Moves from right to left
     responsive: [
-      { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1, dots: true } },
-      { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1, dots: true } },
-      { breakpoint: 960, settings: { slidesToShow: 3.8, slidesToScroll: 1, dots: false } },
-      { breakpoint: 768, settings: { slidesToShow: 4, slidesToScroll: 1, dots: false } },
+      { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
+      { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1 } },
+      { breakpoint: 960, settings: { slidesToShow: 3.8, slidesToScroll: 1 } },
+      { breakpoint: 768, settings: { slidesToShow: 4, slidesToScroll: 1 } },
       { breakpoint: 670, settings: { slidesToShow: 3.5, slidesToScroll: 1 } },
-      { breakpoint: 480, settings: { slidesToShow: 2.3, slidesToScroll: 1, dots: false } },
+      { breakpoint: 480, settings: { slidesToShow: 2.3, slidesToScroll: 1 } },
     ],
   };
 
