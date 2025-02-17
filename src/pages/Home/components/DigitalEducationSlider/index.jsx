@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import { Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
@@ -13,6 +13,7 @@ import Inovation from '@assets/images/inovation.svg';
 import Technology from '@assets/images/Technologyimg.svg';
 import Mudaris from '@assets/images/mudaris.svg';
 import Trading from '@assets/images/trading.svg';
+
 const educationImages = [
   Trading,
   Business,
@@ -29,7 +30,7 @@ export default function DigitalEducation() {
   const language = i18n.language;
   const fontClass = language === 'fa' ? 'rubik' : 'inter';
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [isPaused, setIsPaused] = useState(false);
+  const sliderRef = useRef(null);
 
   const settings = {
     dots: true,
@@ -38,63 +39,40 @@ export default function DigitalEducation() {
     speed: 10000,
     slidesToShow: 6.7,
     slidesToScroll: 1,
-    autoplay: true, // Autoplay is paused when mouse is hovered
+    autoplay: true,
     autoplaySpeed: 7000,
     cssEase: 'linear',
-    pauseOnHover: true, // We handle pausing manually
+    pauseOnHover: false, // Disable default pause to handle manually
+    rtl: true, // Corrected: Moves from right to left
     responsive: [
-      {
-        breakpoint: 1544,
-        settings: { slidesToShow: 5.7, slidesToScroll: 3, dots: true },
-      },
-
-      {
-        breakpoint: 1044,
-        settings: { slidesToShow: 4.2, slidesToScroll: 3, dots: true },
-      },
-      {
-        breakpoint: 960,
-        settings: { slidesToShow: 3.8, slidesToScroll: 2, dots: false },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 4, slidesToScroll: 2, dots: false },
-      },
-      { breakpoint: 670, settings: { slidesToShow: 3.5, slidesToScroll: 2 } },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 2.3, slidesToScroll: 1, dots: false },
-      },
+      { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1, dots: true } },
+      { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1, dots: true } },
+      { breakpoint: 960, settings: { slidesToShow: 3.8, slidesToScroll: 1, dots: false } },
+      { breakpoint: 768, settings: { slidesToShow: 4, slidesToScroll: 1, dots: false } },
+      { breakpoint: 670, settings: { slidesToShow: 3.5, slidesToScroll: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 2.3, slidesToScroll: 1, dots: false } },
     ],
   };
 
   return (
     <section className="DigitalEducationComponent">
       <Slider
+        ref={sliderRef}
         {...settings}
-        onMouseEnter={() => setIsPaused(true)} // Pause slider when mouse enters
-        onMouseLeave={() => setIsPaused(false)} // Resume slider when mouse leaves
+        onMouseEnter={() => sliderRef.current?.slickPause()} // Immediate pause
+        onMouseLeave={() => sliderRef.current?.slickPlay()} // Resume autoplay
       >
         {educationImages.map((img, index) => {
-          const title = t(`digitaleducationcards.${index}.title`, {
-            defaultValue: '',
-          });
-
-          const description = t(`digitaleducationcards.${index}.desc`, {
-            defaultValue: '',
-          });
+          const title = t(`digitaleducationcards.${index}.title`, { defaultValue: '' });
+          const description = t(`digitaleducationcards.${index}.desc`, { defaultValue: '' });
 
           return (
             <Box
               key={index}
               className="PicBgDigitalEducationSlide"
               sx={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
-              onMouseEnter={() => {
-                setHoveredIndex(index);
-              }}
-              onMouseLeave={() => {
-                setHoveredIndex(null);
-              }}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
             >
               <Box
                 className={
@@ -105,8 +83,9 @@ export default function DigitalEducation() {
               >
                 <Typography
                   variant="h5"
-                  className={`${language === 'fa' ? 'DigitalEducationCardTitle clr-white rubik' : 'DigitalEducationCardTitle clr-white inter'}
-                      ${hoveredIndex === index ? 'hight-visible' : ''} 
+                  className={`
+                    DigitalEducationCardTitle clr-white ${fontClass} 
+                    ${hoveredIndex === index ? 'hight-visible' : ''}
                   `}
                 >
                   {title}
@@ -115,7 +94,7 @@ export default function DigitalEducation() {
                   variant="body2"
                   className={`DigitalEducationCardDescription clr-white 
                       ${hoveredIndex === index ? 'visible' : ''} 
-                      ${language === 'fa' ? 'rubik' : 'inter'}`}
+                      ${fontClass}`}
                 >
                   {description}
                 </Typography>

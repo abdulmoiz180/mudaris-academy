@@ -94,9 +94,13 @@
   .why_card {
     width: 100%;
     height: 210px;
+    display: flex  !important;
     justify-content: center;
     padding: 30px !important;
     align-items: center; /*on request of wahaj zafar*/
+  }
+  .why_card p{
+    text-align: center !important;
   }
   .why-cards-container {
     margin: 10px !important;
