@@ -98,6 +98,9 @@
   .faq-container {
     height: 100%;
   }
+  .css-l0jafl {
+    gap: 10px !important;
+  }
   .faq-answer-wrapper {
     width: 80%;
     margin: -30px 0 0 75px;
