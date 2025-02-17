@@ -231,9 +231,10 @@ li {
     font-size: 22px !important;
   }
   .mobsecondheading {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .mobdescription {
-    font-size: 12px !important;
+    font-size: 14px !important;
+    letter-spacing: normal;
   }
 }
