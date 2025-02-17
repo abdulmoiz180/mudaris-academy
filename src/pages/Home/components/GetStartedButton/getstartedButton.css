@@ -31,8 +31,8 @@
 .GetStartedButton {
   background: linear-gradient(135deg, #4f00c4, #c015ff);
   color: white !important;
-  font-size: 16px !important;
-  font-weight: bold !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
   padding: 12px 24px !important;
   border-radius: 8px !important;
   transition: all 0.3s ease-in-out !important;

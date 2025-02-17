@@ -9,13 +9,13 @@ export const GetStartedButton = ({ onButtonClick }) => {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
         whileHover={{
           scale: 1.1,
-          boxShadow: "0px 0px 20px rgba(255, 0, 255, 0.7)",
+          boxShadow: '0px 0px 20px rgba(255, 0, 255, 0.7)',
         }}
       >
-        <Button className="GetStartedButton zain" onClick={onButtonClick}>
+        <Button className="GetStartedButton rubik" onClick={onButtonClick}>
           به جمع میلیونر‌های جوان بپیوندید
         </Button>
       </motion.div>
