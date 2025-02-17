@@ -188,7 +188,7 @@
     width: calc(100% - 10%) !important;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
   .why_card {
     width: 380px;
     height: 250px;
@@ -197,7 +197,7 @@
   }
   .why_card_wrapper {
     gap: 10px;
-    padding: 24px 80px 24px 80px !important;
+    padding: 24px 20px 24px 20px !important;
     justify-content: space-between;
   }
   .vertical,

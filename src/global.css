@@ -27,6 +27,8 @@
 }
 body {
   background: var(--primary-clr) !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 .rubik {
   font-family: 'Rubik', sans-serif !important;

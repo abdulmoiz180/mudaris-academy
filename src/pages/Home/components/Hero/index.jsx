@@ -75,11 +75,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-{
-  /* {showPlayButton && (
-              <span className="hero-play-wrapper video-fade-in">
-                <img src={Play} alt="Play Video" />
-              </span>
-            )} */
-}
