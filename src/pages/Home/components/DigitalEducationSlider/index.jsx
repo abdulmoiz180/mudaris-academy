@@ -45,7 +45,9 @@ export default function DigitalEducation() {
     pauseOnHover: true, // Stops only when user hovers over slides
     cssEase: 'linear', // Ensures smooth and continuous motion
     draggable: true,
-    swipeToSlide: true,
+    swipe: true,
+    touchThreshold: 10,
+    swipeToSlide: false,
     rtl: false,
     responsive: [
       { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
