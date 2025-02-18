@@ -12,7 +12,10 @@
   font-family: 'Rubik', sans-serif;
   font-family: 'Zain', sans-serif;
 }
-
+@font-face {
+  font-family: 'entezar';
+  src: url(./assets/fonts/entezar/thefont.ttf);
+}
 :root {
   --primary-clr: #020103;
   --secondary-clr: #4d3763;
@@ -24,6 +27,9 @@
 }
 .dark-gray {
   color: #aaaaaa !important;
+}
+.zain {
+  font-family: 'Entezar', sans-serif !important;
 }
 body {
   background: var(--primary-clr) !important;
@@ -54,9 +60,9 @@ body {
 .inter {
   font-family: 'Inter', sans-serif !important;
 }
-.zain {
+/* .zain {
   font-family: 'Zain', sans-serif !important;
-}
+} */
 html[lang='fa'] .inter {
   font-family: 'Rubik', sans-serif !important;
 }
