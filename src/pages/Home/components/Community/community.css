@@ -45,6 +45,7 @@
   font-size: 33px !important;
   font-weight: 900 !important;
   letter-spacing: -0.0001em !important;
+  color: #9855ff !important;
 }
 .community-stories {
   align-items: start;
@@ -158,8 +159,8 @@
     height: 30px;
   }
   .commmunity-smallHeading {
-    font-size: 28px !important;
-    font-weight: 900 !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
     letter-spacing: -0.0001em !important;
   }
 }

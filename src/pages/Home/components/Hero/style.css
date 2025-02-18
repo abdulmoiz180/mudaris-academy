@@ -152,7 +152,7 @@
     69px 89px 113px 0px rgba(11, 18, 50, 0.09),
     17px 22px 62px 0px rgba(11, 18, 50, 0.1);
 }
-.video-container iframe{
+.video-container iframe {
   position: relative;
   z-index: 2;
 }
@@ -316,9 +316,7 @@
     font-size: 16px !important;
     width: 85% !important;
   }
-  .HeroComponentButtonDiv {
-    width: 220px;
-  }
+
   .hero-bg-lines::before {
     display: none;
   }
@@ -355,6 +353,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .BlurGlow {
+    display: none;
+  }
   .HeroPagecontainer {
     justify-content: flex-start;
   }
@@ -440,21 +441,15 @@
     /* display: none; */
   }
   .hero-bg-lines::after {
-    width: 290px;
-    height: 230px;
-    position: absolute;
-    content: '';
-    flex-shrink: 0;
-    border-radius: 565.299px;
-    border: 1px solid #fff;
-    opacity: 0.2;
-    top: -30px;
-    left: -42px;
+    display: none;
   }
   .HeroComponentButtonDiv {
-    width: 165px;
-    height: 47px;
-    padding: 0px;
+    padding: 28px 7px;
+    margin-top: 30px;
+  }
+  .HeroComponentButtonDiv .GetStartedButton {
+    font-weight: 900 !important;
+    color: #ffffff !important;
   }
   .hero-bg-lines::before {
     display: none;

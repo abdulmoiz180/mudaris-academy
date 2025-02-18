@@ -58,7 +58,7 @@ const GetaJob = () => {
         <div className="getajob-paragraphs">
           <div className="getajobParaforbg">
             <p
-              className={`getajob-qa ${language === 'fa' ? 'zain' : 'dm-sans'}`}
+              className={`getajob-qa ${language === 'fa' ? 'rubik' : 'dm-sans'}`}
             >
               {t('getajob.descriptionpara1')}
             </p>
@@ -75,7 +75,7 @@ const GetaJob = () => {
 
           <div className="getajobParaforbg">
             <p
-              className={`getajob-qa ${language === 'fa' ? 'zain' : 'dm-sans'}`}
+              className={`getajob-qa ${language === 'fa' ? 'rubik' : 'dm-sans'}`}
             >
               {t('getajob.descriptionpara2')}
             </p>

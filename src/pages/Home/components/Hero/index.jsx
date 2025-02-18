@@ -5,7 +5,6 @@ import BlurGlow from '@assets/images/blur2.svg';
 import { useTranslation } from 'react-i18next';
 import { GetStartedButton } from '../GetStartedButton/index.jsx';
 import { priceCardsRef } from '../../index';
-import Play from '@assets/icons/play.svg';
 
 const Hero = () => {
   const { t, i18n } = useTranslation('home');
@@ -63,7 +62,12 @@ const Hero = () => {
         </Box>
 
         {/* Video Section */}
-        <div className="video-container" onClick={()=>{console.log('object');}}>
+        <div
+          className="video-container"
+          onClick={() => {
+            console.log('object');
+          }}
+        >
           {/* {showPlayButton && (
             <span className="hero-play-wrapper video-fade-in">
               <img src={Play} alt="Play Video" />
