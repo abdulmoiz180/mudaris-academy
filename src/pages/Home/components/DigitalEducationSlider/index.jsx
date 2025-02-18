@@ -36,13 +36,13 @@ export default function DigitalEducation() {
     dots: true,
     infinite: true,
     arrows: false,
-    speed: 8000,
+    speed: 3000,
     slidesToShow: 6.7,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
-    pauseOnFocus:true,
-    pauseOnDotsHover:true,
+    autoplaySpeed: 3000,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
     cssEase: 'linear',
     pauseOnHover: true, // Disable default pause to handle manually
     rtl: true, // Corrected: Moves from right to left
@@ -58,13 +58,14 @@ export default function DigitalEducation() {
 
   return (
     <section className="DigitalEducationComponent">
-      <Slider
-        ref={sliderRef}
-        {...settings}
-      >
+      <Slider ref={sliderRef} {...settings}>
         {educationImages.map((img, index) => {
-          const title = t(`digitaleducationcards.${index}.title`, { defaultValue: '' });
-          const description = t(`digitaleducationcards.${index}.desc`, { defaultValue: '' });
+          const title = t(`digitaleducationcards.${index}.title`, {
+            defaultValue: '',
+          });
+          const description = t(`digitaleducationcards.${index}.desc`, {
+            defaultValue: '',
+          });
 
           return (
             <Box
