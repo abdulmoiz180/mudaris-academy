@@ -84,12 +84,12 @@ const Community = () => {
           language === 'fa' ? 'alignItems-right' : 'alignItems-left'
         } ${isMobile ? 'center flex-center' : ''}`}
       >
-        <Typography variant="h3" className={`zain commmunity-smallHeading `}>
+        <Typography variant="h3" className={`rubik commmunity-smallHeading `}>
           {t('studentvideoreviews.heading')}
         </Typography>
         <Typography
           variant="body1"
-          className={`clr-white zain community-description `}
+          className={`clr-white community-description rubik`}
         >
           {t('studentvideoreviews.description')}
         </Typography>
