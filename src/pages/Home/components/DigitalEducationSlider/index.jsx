@@ -38,7 +38,7 @@ export default function DigitalEducation() {
     arrows: false,
     speed: 5000,
     slidesToShow: 6.7,
-    slidesToScroll: 0.5,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnFocus: false,
@@ -51,16 +51,28 @@ export default function DigitalEducation() {
     responsive: [
       {
         breakpoint: 1544,
-        settings: { slidesToShow: 5.7, slidesToScroll: 0.5 },
+        settings: { slidesToShow: 5.7, slidesToScroll: 2 },
       },
       {
         breakpoint: 1044,
-        settings: { slidesToShow: 4.2, slidesToScroll: 0.5 },
+        settings: { slidesToShow: 4.2, slidesToScroll: 2, pauseOnFocus: true },
       },
-      { breakpoint: 960, settings: { slidesToShow: 3.8, slidesToScroll: 0.5 } },
-      { breakpoint: 768, settings: { slidesToShow: 4, slidesToScroll: 0.5 } },
-      { breakpoint: 670, settings: { slidesToShow: 3.5, slidesToScroll: 0.5 } },
-      { breakpoint: 480, settings: { slidesToShow: 2.3, slidesToScroll: 0.5 } },
+      {
+        breakpoint: 960,
+        settings: { slidesToShow: 3.8, slidesToScroll: 2, pauseOnFocus: true },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 4, slidesToScroll: 2, pauseOnFocus: true },
+      },
+      {
+        breakpoint: 670,
+        settings: { slidesToShow: 3.5, slidesToScroll: 2, pauseOnFocus: true },
+      },
+      {
+        breakpoint: 480,
+        settings: { slidesToShow: 2.3, slidesToScroll: 2, pauseOnFocus: true },
+      },
     ],
   };
 
