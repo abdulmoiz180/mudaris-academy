@@ -12,7 +12,11 @@
   font-family: 'Rubik', sans-serif;
   font-family: 'Zain', sans-serif;
 }
-
+/* @font-face {
+  font-family: '';
+  src: url(./assets/fonts/font.entezar.A1/font.entezar.A1\ mypsdshop.ir\ \(14\).ttf)
+    format('truetype');
+} */
 :root {
   --primary-clr: #020103;
   --secondary-clr: #4d3763;
@@ -24,6 +28,9 @@
 }
 .dark-gray {
   color: #aaaaaa !important;
+}
+.entezar {
+  font-family: 'Entezar', sans-serif !important;
 }
 body {
   background: var(--primary-clr) !important;
