@@ -31,50 +31,32 @@ export default function DigitalEducation() {
   const fontClass = language === 'fa' ? 'rubik' : 'inter';
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const sliderRef = useRef(null);
-
   const settings = {
     dots: true,
     infinite: true,
     arrows: false,
-    speed: 5000,
+    speed: 5000, // Smooth slow transition
     slidesToShow: 6.7,
-    slidesToScroll: 2,
+    slidesToScroll: 1, // Scrolls one slide at a time for continuous movement
     autoplay: true,
-    autoplaySpeed: 4000,
-    pauseOnFocus: false,
-    pauseOnDotsHover: true,
-    pauseOnHover: true,
-    cssEase: 'ease-in-out',
+    autoplaySpeed: 1, // Very fast interval to keep it always moving
+    pauseOnFocus: true,  // Stops only when user clicks
+    pauseOnDotsHover: true, // Stops when user hovers over dots
+    pauseOnHover: true, // Stops only when user hovers over slides
+    cssEase: 'linear', // Ensures smooth and continuous motion
     draggable: true,
     swipeToSlide: true,
     rtl: false,
     responsive: [
-      {
-        breakpoint: 1544,
-        settings: { slidesToShow: 5.7, slidesToScroll: 2 },
-      },
-      {
-        breakpoint: 1044,
-        settings: { slidesToShow: 4.2, slidesToScroll: 2, pauseOnFocus: true },
-      },
-      {
-        breakpoint: 960,
-        settings: { slidesToShow: 3.8, slidesToScroll: 2, pauseOnFocus: true },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 4, slidesToScroll: 2, pauseOnFocus: true },
-      },
-      {
-        breakpoint: 670,
-        settings: { slidesToShow: 3.5, slidesToScroll: 2, pauseOnFocus: true },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 2.3, slidesToScroll: 2, pauseOnFocus: true },
-      },
+      { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
+      { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1 } },
+      { breakpoint: 960, settings: { slidesToShow: 3.8, slidesToScroll: 1 } },
+      { breakpoint: 768, settings: { slidesToShow: 4, slidesToScroll: 1 } },
+      { breakpoint: 670, settings: { slidesToShow: 3.5, slidesToScroll: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 2.3, slidesToScroll: 1 } },
     ],
   };
+  
 
   return (
     <section className="DigitalEducationComponent">
