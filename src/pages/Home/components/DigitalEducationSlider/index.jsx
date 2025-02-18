@@ -46,8 +46,8 @@ export default function DigitalEducation() {
     cssEase: 'linear', // Ensures smooth and continuous motion
     draggable: true,
     swipe: true,
-    touchThreshold: 10,
-    swipeToSlide: false,
+    touchThreshold: 5,
+    swipeToSlide: true,
     rtl: false,
     responsive: [
       { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
