@@ -34,29 +34,31 @@ export default function DigitalEducation() {
   const settings = {
     dots: true,
     infinite: true,
-    arrows: false,
-    speed: 5000, // Smooth slow transition
     slidesToShow: 6.7,
-    slidesToScroll: 1, // Scrolls one slide at a time for continuous movement
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1, // Very fast interval to keep it always moving
-    pauseOnFocus: true,  // Stops only when user clicks
-    pauseOnDotsHover: true, // Stops when user hovers over dots
-    pauseOnHover: true, // Stops only when user hovers over slides
-    cssEase: 'linear', // Ensures smooth and continuous motion
-    draggable: true,
-    swipeToSlide: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: 'linear',
     rtl: false,
     responsive: [
       { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
       { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1 } },
       { breakpoint: 960, settings: { slidesToShow: 3.8, slidesToScroll: 1 } },
-      { breakpoint: 768, settings: { slidesToShow: 4, slidesToScroll: 1 } },
-      { breakpoint: 670, settings: { slidesToShow: 3.5, slidesToScroll: 1 } },
-      { breakpoint: 480, settings: { slidesToShow: 2.3, slidesToScroll: 1 } },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 4, slidesToScroll: 1, swipeToSlide: true },
+      },
+      {
+        breakpoint: 670,
+        settings: { slidesToShow: 3.5, slidesToScroll: 1, swipeToSlide: true },
+      },
+      {
+        breakpoint: 480,
+        settings: { slidesToShow: 2.3, slidesToScroll: 1, swipeToSlide: true },
+      },
     ],
   };
-  
 
   return (
     <section className="DigitalEducationComponent">
