@@ -89,7 +89,7 @@ const Community = () => {
         </Typography>
         <Typography
           variant="body1"
-          className={`clr-white community-description ${fontClass}`}
+          className={`clr-white community-description rubik`}
         >
           {t('studentvideoreviews.description')}
         </Typography>
