@@ -54,7 +54,10 @@ const Hero = () => {
             {t('Introduction.description')}
           </Typography>
           <div className="HeroComponentButtonDiv">
-            <GetStartedButton onButtonClick={scrollToPriceCards} />
+            <GetStartedButton
+              content="برای ثبت‌نام دوره هفتم اینجا کلیک کنید"
+              onButtonClick={scrollToPriceCards}
+            />
           </div>
           <span className="hero-bg-lines">
             <img src={BlurGlow} className="BlurGlow" alt="Blur effect" />

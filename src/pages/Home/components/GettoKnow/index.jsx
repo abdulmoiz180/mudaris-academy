@@ -65,7 +65,10 @@ const GettoKnow = () => {
                 {t('gettoknow.description')}
               </p>
             </Box>
-            <GetStartedButton onButtonClick={scrollToPriceCards} />
+            <GetStartedButton
+              onButtonClick={scrollToPriceCards}
+              content="به جمع میلیونر های جوان بپیوندید"
+            />
           </Box>
         </Box>
 

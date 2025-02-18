@@ -382,12 +382,12 @@
     width: 100%;
     height: 200px;
   }
-    .hero-play-wrapper {
-      left: 0;
-      transform: translate(140%, 50%);
-      bottom: 0;
-      padding: 20px;
-    }
+  .hero-play-wrapper {
+    left: 0;
+    transform: translate(140%, 50%);
+    bottom: 0;
+    padding: 20px;
+  }
   .video-container {
     position: relative;
   }
