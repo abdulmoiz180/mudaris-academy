@@ -46,7 +46,7 @@ export default function DigitalEducation() {
     cssEase: 'linear', // Ensures smooth and continuous motion
     draggable: true,
     swipe: true,
-    touchThreshold: 5,
+    touchThreshold: 8,
     swipeToSlide: true,
     rtl: false,
     responsive: [
