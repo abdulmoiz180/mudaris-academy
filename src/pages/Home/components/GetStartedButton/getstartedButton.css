@@ -51,17 +51,11 @@
   .GetStartedButton {
     font-size: 12px !important;
   }
-  .GetStartedButtonDiv {
-    min-width: 0 !important;
-  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .GetStartedButton {
     font-size: 16px !important;
-  }
-  .GetStartedButtonDiv {
-    min-width: 0 !important;
   }
 }
 @media screen and (max-width: 670px) {

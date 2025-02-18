@@ -1,4 +1,4 @@
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import './community.css';
 import Person from '@assets/images/communityPerson.svg';
@@ -84,10 +84,7 @@ const Community = () => {
           language === 'fa' ? 'alignItems-right' : 'alignItems-left'
         } ${isMobile ? 'center flex-center' : ''}`}
       >
-        <Typography
-          variant="h3"
-          className={`clr-white commmunity-smallHeading ${fontClass}`}
-        >
+        <Typography variant="h3" className={`rubik commmunity-smallHeading `}>
           {t('studentvideoreviews.heading')}
         </Typography>
         <Typography

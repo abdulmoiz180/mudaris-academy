@@ -9,19 +9,20 @@
   display: flex;
   gap: 100px;
   border-radius: 60px;
-  direction:ltr;
+  direction: ltr;
 }
-.navBarLogo{
+.navBarLogo {
   display: flex;
   height: 50px;
   width: 55px;
 }
-.css-99wn1p-MuiList-root-MuiMenu-list {
+.css-99wn1p-MuiList-root-MuiMenu-list,
+.css-1c1ttlegi {
   background: black;
 }
-.css-10h82pl-MuiPaper-root-MuiAppBar-root{
-margin: auto !important;
-width: 90% !important;
+.css-10h82pl-MuiPaper-root-MuiAppBar-root {
+  margin: auto !important;
+  width: 90% !important;
 }
 .css-1jmxzwo-MuiToolbar-root {
   gap: 40px;
@@ -132,7 +133,7 @@ width: 90% !important;
 }
 /* it's for hiding the buttons of sign in and sign up */
 .BorderDiv .rightbtn:nth-child(2),
-.BorderDiv .rightbtn:nth-child(3){
+.BorderDiv .rightbtn:nth-child(3) {
   display: none !important;
 }
 .BorderDiv .rightbtn:nth-child(2) Button,
@@ -146,17 +147,17 @@ width: 90% !important;
   .navBarLogo {
     height: 30px;
     width: 35px;
-}
-  
-/* it's for hiding the buttons of sign in and sign up */
-.BorderDiv .rightbtn:nth-child(2),
-.BorderDiv .rightbtn:nth-child(3){
-  display: none !important;
-}
-.BorderDiv .rightbtn:nth-child(2) Button,
-.BorderDiv .rightbtn:nth-child(3) Button {
-  display: none !important;
-}
+  }
+
+  /* it's for hiding the buttons of sign in and sign up */
+  .BorderDiv .rightbtn:nth-child(2),
+  .BorderDiv .rightbtn:nth-child(3) {
+    display: none !important;
+  }
+  .BorderDiv .rightbtn:nth-child(2) Button,
+  .BorderDiv .rightbtn:nth-child(3) Button {
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 600px) {
   .css-1jmxzwo-MuiToolbar-root {
@@ -195,7 +196,7 @@ width: 90% !important;
 @media only screen and (min-width: 1163px) {
   .css-1jmxzwo-MuiToolbar-root {
     height: 100px !important;
-  direction: ltr;
+    direction: ltr;
   }
 }
 @media only screen and (min-width: 1200px) {
