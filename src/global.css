@@ -15,6 +15,7 @@
 @font-face {
   font-family: 'entezar';
   src: url(./assets/fonts/entezar/saadopen.ttf);
+
 }
 :root {
   --primary-clr: #020103;

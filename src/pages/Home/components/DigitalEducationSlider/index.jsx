@@ -31,40 +31,45 @@ export default function DigitalEducation() {
   const fontClass = language === 'fa' ? 'rubik' : 'inter';
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const sliderRef = useRef(null);
-
   const settings = {
     dots: true,
     infinite: true,
-    arrows: false,
-    speed: 8000,
     slidesToShow: 6.7,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
-    pauseOnFocus:true,
-    pauseOnDotsHover:true,
+    speed: 2000,
+    autoplaySpeed: 2000,
     cssEase: 'linear',
-    pauseOnHover: true, // Disable default pause to handle manually
-    rtl: true, // Corrected: Moves from right to left
+    rtl: false,
     responsive: [
       { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
       { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1 } },
       { breakpoint: 960, settings: { slidesToShow: 3.8, slidesToScroll: 1 } },
-      { breakpoint: 768, settings: { slidesToShow: 4, slidesToScroll: 1 } },
-      { breakpoint: 670, settings: { slidesToShow: 3.5, slidesToScroll: 1 } },
-      { breakpoint: 480, settings: { slidesToShow: 2.3, slidesToScroll: 1 } },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 4, slidesToScroll: 1, swipeToSlide: true },
+      },
+      {
+        breakpoint: 670,
+        settings: { slidesToShow: 3.5, slidesToScroll: 1, swipeToSlide: true },
+      },
+      {
+        breakpoint: 480,
+        settings: { slidesToShow: 2.3, slidesToScroll: 1, swipeToSlide: true },
+      },
     ],
   };
 
   return (
     <section className="DigitalEducationComponent">
-      <Slider
-        ref={sliderRef}
-        {...settings}
-      >
+      <Slider ref={sliderRef} {...settings}>
         {educationImages.map((img, index) => {
-          const title = t(`digitaleducationcards.${index}.title`, { defaultValue: '' });
-          const description = t(`digitaleducationcards.${index}.desc`, { defaultValue: '' });
+          const title = t(`digitaleducationcards.${index}.title`, {
+            defaultValue: '',
+          });
+          const description = t(`digitaleducationcards.${index}.desc`, {
+            defaultValue: '',
+          });
 
           return (
             <Box
