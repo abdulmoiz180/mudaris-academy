@@ -42,11 +42,10 @@
   margin: auto;
 }
 .commmunity-smallHeading {
-  color: #9855ff;
+  color: #ffffff;
   font-size: 33px !important;
   font-weight: 900 !important;
   letter-spacing: -0.0001em !important;
-  color: #9855ff !important;
 }
 .community-stories {
   align-items: start;
@@ -130,7 +129,7 @@
     display: flex !important;
   }
   .community-description {
-    font-size: 18px !important;
+    font-size: 16px !important;
     width: 100%;
     margin: auto;
     text-align: center !important;

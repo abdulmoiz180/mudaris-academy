@@ -63,8 +63,19 @@ export const PriceCards = () => {
           {t('paymentHeading.title')}
         </Typography>
         <Typography variant="body1" className="plan-description zain">
-          {t('paymentHeading.description')}
+          1999 قیمت کلی این دوره پس از تخفیف 299 یورو است 💵 بدانید که شما مصرف
+          نه بلکه سرمایه گذاری می‌کنید
         </Typography>
+        <Button
+          variant="contained"
+          className={`subscribe-button-psedu zain-real`}
+          onClick={handleSubscribe}
+        >
+          <span className="line-through"> 1999 €</span>
+          <span className="middletext">برای ثبت نام اینجا کلیک کنید</span>
+          <span> 299 €</span>
+        </Button>
+        <p className="plan-description">{t('paymentHeading.description')}</p>
       </Box>
 
       {/* Conditionally Render Grid or Slider */}
@@ -81,7 +92,7 @@ export const PriceCards = () => {
                     <Typography variant="h5" className="plan-heading  rubik">
                       {plan.title}
                     </Typography>
-                    {index === 2 || index === 3 ? (
+                    {index === 3 || index === 4 ? (
                       <img src={Bitcoin} className="bitCoinLogo" />
                     ) : (
                       ''
@@ -131,7 +142,7 @@ export const PriceCards = () => {
                     <Typography variant="h5" className="plan-heading rubik">
                       {plan.title}
                     </Typography>
-                    {index === 2 || index === 3 ? (
+                    {index === 0 || index === 1 ? (
                       <img src={Bitcoin} className="bitCoinLogo" />
                     ) : (
                       ''

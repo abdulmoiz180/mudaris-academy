@@ -43,7 +43,7 @@ const LineCards = () => {
                   top: 0,
                   bottom: 0,
                   left: '50%',
-                  height:'1350px',
+                  height: '1350px',
                   transform: 'translateX(-50%)',
                   width: '10px',
                   background: '#8C45FF66', // Matches your design
@@ -92,7 +92,7 @@ const LineCards = () => {
                     </Typography>
                     <Typography
                       variant="body1"
-                      className="importanttoreadCarddescription rubik "
+                      className="importanttoreadCarddescription zain "
                     >
                       {item.description}
                     </Typography>

@@ -57,10 +57,14 @@ const WhatYouGet = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    initialSlide: 1,
+    pauseOnHover: true,
   };
 
   return (
@@ -73,7 +77,6 @@ const WhatYouGet = () => {
         </h1>
       </Box>
       {isMobile ? (
-        // 🛑 Use React Slick for Mobile
         <Slider {...sliderSettings}>
           {contentData.map((item, index) => (
             <div

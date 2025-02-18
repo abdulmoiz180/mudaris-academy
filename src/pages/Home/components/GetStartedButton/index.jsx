@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import './getstartedButton.css';
 
-export const GetStartedButton = ({ onButtonClick }) => {
+export const GetStartedButton = ({ onButtonClick, content }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -15,7 +15,7 @@ export const GetStartedButton = ({ onButtonClick }) => {
       }}
     >
       <Button className="GetStartedButton rubik" onClick={onButtonClick}>
-        به جمع میلیونر‌های جوان بپیوندید
+        {content}
       </Button>
     </motion.div>
   );

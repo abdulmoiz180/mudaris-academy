@@ -84,17 +84,21 @@ const Community = () => {
           language === 'fa' ? 'alignItems-right' : 'alignItems-left'
         } ${isMobile ? 'center flex-center' : ''}`}
       >
-        <Typography variant="h3" className={`rubik commmunity-smallHeading `}>
+        <Typography variant="h3" className={`zain commmunity-smallHeading `}>
           {t('studentvideoreviews.heading')}
         </Typography>
         <Typography
           variant="body1"
-          className={`clr-white community-description rubik`}
+          className={`clr-white community-description zain-real`}
         >
           {t('studentvideoreviews.description')}
         </Typography>
 
-        <GetStartedButton onButtonClick={scrollToPriceCards} />
+        <GetStartedButton
+          onButtonClick={scrollToPriceCards}
+          content="باز کنید و همین حالا به دوره هفتم بپیوندید!
+"
+        />
       </div>
 
       {/* Mobile View - Slider */}
