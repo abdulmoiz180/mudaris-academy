@@ -170,7 +170,7 @@
     display: flex;
     justify-content: space-between !important;
     flex-direction: row-reverse !important;
-    gap: 150px !important;
+    gap: 50px !important;
   }
   .css-1jmxzwo-MuiToolbar-root {
     justify-content: space-between !important;
