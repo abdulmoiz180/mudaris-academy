@@ -80,6 +80,14 @@
 .btnContainer Button:nth-child(1) {
   display: flex;
 }
+.css-1yk82qb {
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: row-reverse !important;
+  width: 100% !important;
+  gap: 110px !important;
+
+}
 .BorderDiv {
   display: flex;
   align-items: center;
@@ -167,7 +175,7 @@
   }
   .css-1yk82qb {
     position: relative;
-    display: flex;
+    display: flex !important;
     justify-content: space-between !important;
     flex-direction: row-reverse !important;
     gap: 50px !important;
