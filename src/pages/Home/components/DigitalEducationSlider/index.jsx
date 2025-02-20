@@ -41,6 +41,9 @@ export default function DigitalEducation() {
     autoplaySpeed: 2000,
     cssEase: 'linear',
     rtl: false,
+    speed: 3000,
+    initialSlide: 1,
+    pauseOnHover: true,
     responsive: [
       { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
       { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1 } },
@@ -55,7 +58,13 @@ export default function DigitalEducation() {
       },
       {
         breakpoint: 480,
-        settings: { slidesToShow: 2.3, slidesToScroll: 1, swipeToSlide: true },
+        settings: {
+          speed: 3000,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplaySpeed: 3000,
+          initialSlide: 1,
+        },
       },
     ],
   };
