@@ -44,7 +44,9 @@
   background: transparent !important;
 }
 .css-ovogzw {
-  width: 90%;
+  width: 90% !important;
+  height: 100px !important;
+  display: flex !important;
 }
 .btnContainer {
   display: flex;
@@ -129,7 +131,7 @@
 }
 .timerandMenuDivINNav {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 .css-99wn1p-MuiList-root-MuiMenu-list {
   background: black !important;
@@ -166,8 +168,9 @@
   .css-1yk82qb {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    justify-content: space-between !important;
+    flex-direction: row-reverse !important;
+    gap: 150px !important;
   }
   .css-1jmxzwo-MuiToolbar-root {
     justify-content: space-between !important;
