@@ -121,6 +121,13 @@
   justify-content: center;
   align-items: center;
 }
+.timerandMenuDivINNav{
+  display: flex;
+  flex-direction: row;
+}
+.css-99wn1p-MuiList-root-MuiMenu-list {
+  background: black !important;
+}
 .css-1xomo8h-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
   background-color: var(--footer-bg) !important;
 }
@@ -147,7 +154,12 @@
     height: 30px;
     width: 35px;
   }
-
+  .timerandMenuDivINNav {
+    width: 67%;
+}
+  .css-1jmxzwo-MuiToolbar-root {
+  justify-content: space-between !important;
+  }
   /* it's for hiding the buttons of sign in and sign up */
   .BorderDiv .rightbtn:nth-child(2),
   .BorderDiv .rightbtn:nth-child(3) {

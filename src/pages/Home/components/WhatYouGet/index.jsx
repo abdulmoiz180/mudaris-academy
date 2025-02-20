@@ -65,6 +65,7 @@ const WhatYouGet = () => {
     autoplaySpeed: 3000,
     initialSlide: 1,
     pauseOnHover: true,
+    cssEase:'linear'
   };
 
   return (
