@@ -1,5 +1,5 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 670px) {
   .countdownTimerMainDiv p {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
