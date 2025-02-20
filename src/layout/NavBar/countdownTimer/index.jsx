@@ -30,7 +30,7 @@ const CountdownTimer = () => {
 
   return (
     <div style={{ textAlign: "center", fontSize: "24px", fontWeight: "bold" }} className="countdownTimerMainDiv">
-      <p>Registration Ends In:</p>
+      <p>Registration Ends In</p>
       {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 ? (
         <p style={{ color: "red" }}>Registration Closed</p>
       ) : (

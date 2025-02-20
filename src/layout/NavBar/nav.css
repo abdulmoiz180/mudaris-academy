@@ -11,6 +11,9 @@
   border-radius: 60px;
   direction: ltr;
 }
+.css-81kwad {
+  background-color: black !important;
+}
 .navBarLogo {
   display: flex;
   height: 50px;
@@ -39,6 +42,9 @@
 }
 .css-5iifl-MuiPaper-root-MuiAppBar-root {
   background: transparent !important;
+}
+.css-ovogzw {
+  width: 90%;
 }
 .btnContainer {
   display: flex;
@@ -121,7 +127,7 @@
   justify-content: center;
   align-items: center;
 }
-.timerandMenuDivINNav{
+.timerandMenuDivINNav {
   display: flex;
   flex-direction: row;
 }
@@ -155,10 +161,16 @@
     width: 35px;
   }
   .timerandMenuDivINNav {
-    width: 67%;
-}
+    gap: 76px;
+  }
+  .css-1yk82qb {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
   .css-1jmxzwo-MuiToolbar-root {
-  justify-content: space-between !important;
+    justify-content: space-between !important;
   }
   /* it's for hiding the buttons of sign in and sign up */
   .BorderDiv .rightbtn:nth-child(2),
