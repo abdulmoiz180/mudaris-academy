@@ -15,7 +15,7 @@
 .subscribe-button-psedu {
   background: linear-gradient(135deg, #4f00c4, #c015ff);
   color: white !important;
-  font-size: 50px !important;
+  font-size: 38px !important;
   font-weight: 900 !important;
   max-width: 600px;
   display: flex;
@@ -35,6 +35,7 @@
 }
 .middletext {
   font-size: 16px !important;
+  letter-spacing: 0px;
 }
 .subscribe-button-psedu:hover {
   background: linear-gradient(135deg, #ff00ff, #5700b5);

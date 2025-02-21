@@ -43,7 +43,7 @@ const LineCards = () => {
                   top: 0,
                   bottom: 0,
                   left: '50%',
-                  height: '1350px',
+                  height: '1600px',
                   transform: 'translateX(-50%)',
                   width: '10px',
                   background: '#8C45FF66', // Matches your design

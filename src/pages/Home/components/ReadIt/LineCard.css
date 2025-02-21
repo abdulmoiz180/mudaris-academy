@@ -75,11 +75,11 @@
 .importanttoreadCard:hover {
   transform: scale(1.003); /* Slightly enlarge the card on hover */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-  background: linear-gradient(180deg, #010002 0%, #361764 100%),
+  background: linear-gradient(180deg, #010002 0%, rgb(54, 23, 100) 100%),
     url(../../../../assets/images/Pattern.png) !important;
   background-size: cover !important;
   background-blend-mode: screen;
-  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0px 0px 6px 3px rgba(54, 23, 100, 0.8) !important;
   backdrop-filter: blur(7px) !important;
 }
 .uaatest {
@@ -407,24 +407,25 @@
     line-height: 50px !important;
   }
   .importanttoreadcardContainer {
-    gap: 75px;
+    gap: 150px;
     width: 100%;
     align-items: center;
+    margin-top: 60px;
   }
   .importanttoreadCard {
     padding: 15px 15px 10px 10px;
     gap: 10px;
-    width: 270px;
+    width: calc(100% - 20px);
     position: relative;
     z-index: 3;
   }
   .importanttoreadCarddescription {
-    font-size: 12px !important;
+    font-size: 18px !important;
     letter-spacing: 0.8px !important;
     line-height: normal;
   }
   .importanttoreadCardtitle {
-    font-size: 18px !important;
+    font-size: 24px !important;
     line-height: 125% !important;
   }
   .importanttoreadCardContentText {
@@ -435,7 +436,7 @@
   }
   .uaatest {
     justify-content: center !important;
-    width: 75%;
+    width: 100%;
   }
   .importanttoreadCardPicDiv img {
     width: 30px;
@@ -456,19 +457,22 @@
     align-items: flex-end;
   }
   .importanttoreadCardnumberDiv:nth-child(1) {
-    right: -18px;
-    top: -165px;
+    right: -20px;
+    top: -10px;
   }
   .importanttoreadCardnumberDiv:nth-child(3) {
-    bottom: 515px;
+    bottom: 820px;
     right: -20px;
   }
   .importanttoreadCardnumberDiv:nth-child(2) {
-    top: 295px;
+    top: 520px;
     right: -20px;
   }
   .importanttoreadCardnumberDiv:nth-child(4) {
     right: -20px;
-    bottom: 150px;
+    bottom: 350px;
+  }
+  .LineCardContainerMainPic {
+    height: 100%;
   }
 }
