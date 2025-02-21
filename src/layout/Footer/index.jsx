@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 const Footer = () => {
   let language = '';
 
-  const fontClass = language === 'fa' ? 'rubik' : 'zain';
+  const fontClass = language === 'fa' ? 'zain-real' : 'zain';
   const { t } = useTranslation('home');
   const handleScrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -107,7 +107,7 @@ const Footer = () => {
 
         <Typography
           variant="body1"
-          className={`secondary-font-clr footer-p ${fontClass}`}
+          className={`secondary-font-clr footer-p dm-sans`}
         >
           © 2025 Mudaris Academy, Inc. All rights reserved
         </Typography>
