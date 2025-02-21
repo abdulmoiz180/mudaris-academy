@@ -37,11 +37,10 @@ export default function DigitalEducation() {
     slidesToShow: 6.7,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     cssEase: 'linear',
     rtl: false,
-    speed: 3000,
+    speed: 5000,
     initialSlide: 1,
     pauseOnHover: true,
     responsive: [

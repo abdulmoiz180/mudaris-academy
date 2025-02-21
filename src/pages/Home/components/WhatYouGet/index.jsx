@@ -57,15 +57,15 @@ const WhatYouGet = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 3000,
+    speed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     initialSlide: 1,
     pauseOnHover: true,
-    cssEase:'linear'
+    cssEase: 'linear',
   };
 
   return (

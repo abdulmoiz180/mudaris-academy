@@ -68,12 +68,14 @@ export const PriceCards = () => {
         </Typography>
         <Button
           variant="contained"
-          className={`subscribe-button-psedu zain-real`}
+          className={`subscribe-button-psedu `}
           onClick={handleSubscribe}
         >
-          <span className="line-through"> 1999 €</span>
-          <span className="middletext">برای ثبت نام اینجا کلیک کنید</span>
-          <span> 299 €</span>
+          <span className="line-through manrope"> 1999 €</span>
+          <span className="middletext zain-real">
+            برای ثبت نام اینجا کلیک کنید
+          </span>
+          <span className="manrope"> 299 €</span>
         </Button>
         <p className="plan-description">{t('paymentHeading.description')}</p>
       </Box>
