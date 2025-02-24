@@ -86,7 +86,6 @@
   flex-direction: row-reverse !important;
   width: 100% !important;
   gap: 110px !important;
-
 }
 .BorderDiv {
   display: flex;
@@ -140,6 +139,7 @@
 .timerandMenuDivINNav {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 .css-99wn1p-MuiList-root-MuiMenu-list {
   background: black !important;
