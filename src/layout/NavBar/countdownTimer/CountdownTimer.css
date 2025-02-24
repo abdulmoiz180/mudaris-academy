@@ -25,15 +25,15 @@
 }
 @media only screen and (max-width: 600px) {
   .countdown-circle {
-    width: 120px;
+    width: fit-content;
     height: 50px;
     font-size: 12px;
   }
 
   .countdown-loader {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 3px solid transparent;
     border-top: 3px solid #3b82f6;
