@@ -72,6 +72,9 @@
     margin-bottom: 40px;
     font-size: 22px !important;
   }
+  .randomComponentCardTextComponentHeading{
+    font-size: 27px !important;
+  }
   .randomComponentCard {
     width: 90% !important;
     padding: 15px !important;

@@ -77,7 +77,7 @@ const TimelineCard = ({ title, description, index, isMobile }) => {
               <Typography
                 variant="h4"
                 sx={{ fontWeight: 'bold', mb: 2, color: 'white' }}
-                className={`randomComponentCardTextComponentHeading mobsecondheading ${language === 'fa' ? ' rubik' : ' inter'}`}
+                className={`randomComponentCardTextComponentHeading cardHeadinginNewLineCard ${language === 'fa' ? ' rubik' : ' inter'}`}
               >
                 {title}
               </Typography>
