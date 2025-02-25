@@ -6,6 +6,7 @@
   direction: ltr;
   text-align: left;
 }
+
 .customCursor {
   height: 20px;
   width: 20px;
@@ -55,8 +56,34 @@
   background: linear-gradient(180deg, #7e2ce8, #c174ff);
 }
 
+
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a142ff, #d08bff);
+  border-radius: 10px;
+}
+
+/* Safari fix */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #a142ff #1a1a1a;
+}
+
+/* Ensure scrollbars apply to all scrollable elements */
+/* .home-page {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+} */
+
 @media only screen and (max-width: 600px) {
   .home-page {
     gap: 80px;
   }
+
 }
