@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 export const PriceCards = () => {
   const { t, i18n } = useTranslation('home');
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1030);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
   const language = i18n.language;
   useEffect(() => {
     const handleResize = () => {
@@ -38,7 +38,7 @@ export const PriceCards = () => {
     pauseOnHover: true,
     pauseOnFocus: true,
     draggable: true,
-    slidesToShow: 3, // Default for mobile
+    slidesToShow: 2, // Default for mobile
     slidesToScroll: 1,
     responsive: [
       {
@@ -49,7 +49,7 @@ export const PriceCards = () => {
         breakpoint: 844, // Show 2 cards at 844px
         settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
-    ],
+    ]
   };
 
   return (
