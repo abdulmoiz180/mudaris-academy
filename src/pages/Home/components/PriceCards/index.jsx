@@ -118,7 +118,7 @@ export const PriceCards = () => {
               </CardContent>
               <Box className="ButtonDiv">
                 <Button
-                  className={`subscribe-button ${index === 0 ? 'blue-btn' : index === 1 ? 'pink-btn' : index === 2 ? 'green-btn' : 'orange-btn'}`}
+                  className={`subscribe-button ${index === 0 ? 'orange-btn' : index === 1 ? 'pink-btn' : index === 2 ? 'green-btn' : 'orange-btn'}`}
                   onClick={handleSubscribe}
                 >
                   Pay Now
@@ -168,7 +168,7 @@ export const PriceCards = () => {
               </CardContent>
               <Box className="ButtonDiv">
                 <Button
-                  className={`subscribe-button ${index === 0 ? 'blue-btn' : index === 1 ? 'green-btn' : index === 2 ? 'pink-btn' : 'orange-btn'}`}
+                  className={`subscribe-button ${index === 0 ? 'orange-btn' : index === 1 ? 'green-btn' : index === 2 ? 'pink-btn' : 'orange-btn'}`}
                   onClick={handleSubscribe}
                 >
                   Pay Now
@@ -183,3 +183,18 @@ export const PriceCards = () => {
 };
 
 export default PriceCards;
+// removed card data 
+// {
+//   "title": "پرداخت در ۲ قسط با کریپتو",
+//   "price": "۲۹۹ €",
+//   "feature_desc": "این گزینه مشابه گزینه دوم است اما با امکان پرداخت در دو نوبت از طریق ارزهای دیجیتال. در این روش:",
+//   "features": [
+//     "✅ همه‌ی مزایای گزینه‌های قبلی را خواهید داشت",
+//     "✅ پرداخت ۵۰٪ مبلغ در ابتدا، و ۵۰٪ دیگر یک ماه بعد از طریق کریپتو",
+//     "✅ همکاران ما در زمان مقرر، پرداخت مرحله دوم را با شما تنظیم خواهند کرد",
+//     "🔘 💵 مبلغ اولین پرداخت: ۱۴۹.۵۰ یورو معادل کریپتو",
+//     "🔘 ₿ پرداخت از طریق USDT، UCDC ",
+//     "📌 اگر قصد دارید از این روش استفاده کنید، لطفاً تنها از روی همین لینک و از طریق ویب سایت ما انجام دهید."
+//   ],
+//   "paymentGateway": "https://nowpayments.io/payment/?iid=5754690434"
+// },
