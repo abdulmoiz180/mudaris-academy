@@ -185,7 +185,7 @@ li {
   .mobdescription {
     font-size: 20px !important;
   }
-  .mobsecondheading {
+  .mobsecondheading,.cardHeadinginNewLineCard {
     font-size: 28px !important;
   }
   .mobHeading {
@@ -199,7 +199,7 @@ li {
   .mobdescription {
     font-size: 18px !important;
   }
-  .mobsecondheading {
+  .mobsecondheading,.cardHeadinginNewLineCard {
     font-size: 26px !important;
   }
   .mobHeading {
@@ -213,7 +213,7 @@ li {
   .mobHeading {
     font-size: 24px !important;
   }
-  .mobsecondheading {
+  .mobsecondheading,.cardHeadinginNewLineCard {
     font-size: 18px !important;
   }
   .mobdescription {
@@ -244,6 +244,9 @@ li {
   .mobsecondheading {
     font-size: 24px !important;
   }
+.cardHeadinginNewLineCard{
+font-size: 27px !important;
+}
   .mobdescription {
     font-size: 18px !important;
     letter-spacing: normal;

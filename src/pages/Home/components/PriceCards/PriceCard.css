@@ -253,7 +253,22 @@
   background: #c13b00 !important; /* Darker Neon Orange */
   box-shadow: 0px 0px 25px rgba(255, 69, 0, 1) !important; /* Bright Orange Glow */
 }
-
+.slick-next {
+  right: auto !important;
+  left: 0px !important;
+}
+.slick-prev {
+  right: 0px !important;
+  left: auto !important;
+}
+.slick-prev, .slick-next {
+  width: 33px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 35px !important;
+  color: #b48eed !important;
+}
 @media only screen and (max-width: 1030px) {
   .card-wrapper {
     flex-direction: row;

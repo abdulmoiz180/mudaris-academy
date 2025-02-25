@@ -31,7 +31,7 @@ export const PriceCards = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    arrows: false,
+    arrows: true,
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -48,10 +48,6 @@ export const PriceCards = () => {
       {
         breakpoint: 844, // Show 2 cards at 844px
         settings: { slidesToShow: 2, slidesToScroll: 1 },
-      },
-      {
-        breakpoint: 1024, // Show 2 cards at 1024px
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
     ],
   };

@@ -35,6 +35,7 @@ export default function DigitalEducation() {
     dots: true,
     infinite: true,
     slidesToShow: 6.7,
+    arrows:false,
     slidesToScroll: 1,
     autoplay: true,
     draggable: true,
@@ -42,6 +43,7 @@ export default function DigitalEducation() {
     cssEase: 'linear',
     pauseOnHover: true,
     onSwipe: 'right',
+    swipeSpeed:50,
     responsive: [
       { breakpoint: 1544, settings: { slidesToShow: 5.7, slidesToScroll: 1 } },
       { breakpoint: 1044, settings: { slidesToShow: 4.2, slidesToScroll: 1 } },
