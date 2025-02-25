@@ -62,7 +62,7 @@ const WhatYouGet = () => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     initialSlide: 1,
     pauseOnHover: true,
     cssEase: 'linear',
