@@ -10,6 +10,7 @@ import DigitalEducation from './components/DigitalEducationSlider/index.jsx';
 import Community from './components/Community/index.jsx';
 import WhatYouGet from './components/WhatYouGet/index.jsx';
 import './home.css';
+import LoadingScreen from './components/LoadingScreen/index.jsx';
 import GetaJob from './components/GetaJob/index.jsx';
 import LineCards from './components/ReadIt/index.jsx';
 import { useTranslation } from 'react-i18next';

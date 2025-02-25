@@ -60,7 +60,7 @@ export default function DigitalEducation() {
       {
         breakpoint: 550,
         settings: {
-          speed: 1000,
+          speed: 500,
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplaySpeed: 2000,
